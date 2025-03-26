@@ -1,0 +1,181 @@
+\documentclass[journal]{IEEEtran}
+\usepackage{amsmath,amsfonts}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{array}
+\usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
+\usepackage{textcomp}
+\usepackage{stfloats}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{cite}
+
+\begin{document}
+
+\title{Deep transfer learning between Sentinel-1 acquisition modes enhances the segmentation of natural oil slick events in the Arctic}
+
+\author{Julien Vadnais,~\IEEEmembership{Graduate Student Member,~IEEE, }Benjamin Aubrey Robson, Christian Haug Eide, Rune Mattingsdal, Malin Johansson
+        % <-this % stops a space
+\thanks{Manuscript received April 19, 2021; revised August 16, 2021. This research was carried out in the context of the InFluSe project (NFR Project No.?).}
+
+%grouped affiliations
+% \thanks{Julien Vadnais, Benjamin Aubrey Robson, and Christian Haug Eide are with the Department of Earth Science, University of Bergen, 5020 Bergen, Norway.
+% Rune Mattingsdal is with the Norwegian Offshore Directorate, 9406 Harstad, Norway.
+% Malin Johansson is with the Department of Physics and Technology, The Arctic University of Norway, 9037 Tromsø, Norway. Corresponding author email address: julien.vadnais@uib.no} 
+
+%separate affilations
+\thanks{Julien Vadnais, Benjamin Aubrey Robson, and Christian Haug Eide are with the Department of Earth Science, University of Bergen, 5020 Bergen, Norway.}
+\thanks{Rune Mattingsdal is with the Norwegian Offshore Directorate, 9406 Harstad, Norway.}
+\thanks{Malin Johansson is with the Department of Physics and Technology, The Arctic University of Norway, 9037 Tromsø, Norway.}
+\thanks{Corresponding author email address: julien.vadnais@uib.no. This article has supplementary available in the GitHub repository at $https:/github.com/julvad/temp_repo_a0$}
+
+\thanks{}% <-this % stops a space
+}
+
+% The paper headers
+\markboth{\LaTeX\ PDF, IEEE GEOSCIENCE AND REMOTE SENSING LETTERS,~Vol.~14, No.~8, March~2025}%
+{Shell \MakeLowercase{\textit{et al.}}: A Sample Article Using IEEEtran.cls for IEEE Journals}
+
+\IEEEpubid{\copyright This work is licensed under CC BY 4.0.}
+% Remember, if you use this you must call \IEEEpubidadjcol in the second
+% column for its text to clear the IEEEpubid mark.
+
+\maketitle
+
+\begin{abstract}
+    This document describes the most common article elements and how to use the IEEEtran class with \LaTeX \ to produce files that are suitable for submission to the IEEE.  
+    IEEEtran can produce conference, journal, and technical note (correspondence) papers with a suitable choice of class options. 
+    This document describes the most common article elements and how to use the IEEEtran class with \LaTeX \ to produce files that are suitable for submission to the IEEE.  
+    IEEEtran can produce conference, journal, and technical note (correspondence) papers with a suitable choice of class options. 
+    This document describes the most common article elements and how to use the IEEEtran class with \LaTeX \ to produce files that are suitable for submission to the IEEE.  
+    IEEEtran can produce conference, journal, and technical note (correspondence) papers with a suitable choice of class options. 
+    This document describes the most common article elements and how to use the IEEEtran class with \LaTeX \ to produce files that are suitable for submission to the IEEE.  
+    The entirety of the data and Python code used in this study are provided in an open-access online repository.
+\end{abstract}
+
+\begin{IEEEkeywords}
+    Article submission, IEEE, IEEEtran, journal, \LaTeX, paper, template, typesetting.
+\end{IEEEkeywords}
+
+\section{Introduction}
+\IEEEPARstart{N}{atural} seepage is a significant contributor of oil entering marine environments \cite{kvenvoldenNaturalSeepageCrude2003}, yet the data required to update quantitative
+estimates of its global scale remain insufficient, especially outside of the United States continental shelf \cite{nationalacademiesofsciencesengineeringandmedicineOilSeaIV2022}. Data scarcity, due to difficulties 
+in monitoring remote offshore areas and obtaining continuous temporal observations, has limited the ability to study the ecosystem contributions and global behavior of natural hydrocarbon seepages. 
+Spaceborne synthetic aperture radar (SAR) is well suited to this task due to its capacity to operate in any lighting conditions, its fine spatial resolution and its wide swath coverage. 
+The capacity of SAR for detecting a slick relies on the damping ratio, the contrast between radar backscatter in slick and oil-free pixels 
+\cite{hovlandSlickDetectionSAR1994,quigleyInvestigationDampingRatio2023}. By reducing sea surface roughness, which reduces radar backscatter, bodies of oil can be discernible from surrounding waters 
+\cite{brekkeSAROilSpill2020,fingasReviewOilSpill2018,alpersOilsSurfactants2004}. 
+
+Numerous frameworks have been proposed to leverage SAR for automatizing slick detection using computer vision algorithms.
+They face a common challenge which has been an ongoing topic of research over the past three decades: the presence of many oil slicks lookalikes including ocean eddies, biogenic slicks and newly-formed ice
+\cite{johanssonCanMineralOil2020,hovlandSlickDetectionSAR1994,alpersOilsSurfactants2004,alpersOilSpillDetection2017,espedalSatelliteDetectionNatural1996}. When exposed to a large number of labeled examples, 
+deep learning algorithms, currently the benchmark in computer vision, can capture complex shape- and texture-related features for image classification or segmentation tasks \cite{goodfellowDeepLearning2016}. 
+Although this approach can prove a powerful discriminator of slick lookalikes, it is known that when trained with limited sample sizes, models struggle to extract more abstract,
+higher-level features \cite{bengioDeepLearnersBenefit2011,bengioDeepLearningRepresentations2012}. This issue is inherent to machine-learning-based SAR oil slick mapping, since slicks will only last 
+a few hours on the surface \cite{jatiaultMonitoringNaturalOil2017,daneshgaraslHindcastModelingOil2017,oreillyDistributionMagnitudeVariability2022}, up to a day
+\cite{macdonaldNaturalUnnaturalOil2015,macdonaldNaturalOilSpills1998}. Slick visibility is also dependent on a specific window of surface wind conditions, outside of which the sea either exhibits too many or 
+too few capillary waves to produce a discriminative damping ratio \cite{quigleyInvestigationDampingRatio2023,sausDetectionDelineationProduced2021,gadeImagingBiogenicAnthropogenic1998}. 
+\IEEEpubidadjcol  
+Lastly, slick events are highly intermittent. Seepage rates vary considerably across both monthly and yearly timescales, with most active slicks having an occurence rate below 10\% 
+\cite{jatiaultNaturalOilSeep2024,oreillyDistributionMagnitudeVariability2022}. Some seeps might stay dormant for several months or years before emitting oil again. In two different regions, it was found that only
+half of the seeps show activity at any time \cite{jatiaultMonitoringNaturalOil2017,garcia-pinedaRemotesensingEvaluationGeophysical2010}, and it is not unsound to believe that this value might be even higher, 
+given that dormant seeps are less likely to be discovered.
+
+In this paper, we assess the potential of transfer learning for enhancing the automatic mapping of natural slicks. 
+Deep transfer learning is a representation learning paradigm that aims to transfer valuable and generalizable features from one setting to another, where the contexts are similar but the target distributions differ 
+\cite{goodfellowDeepLearning2016}.
+We pre-trained two image segmentation models with oil slicks mapped in Sentinel-1 images over the North Sea, and then fine-tuned them on two known slick events in the 
+Arctic, for which we have only limited observations. Over the Arctic, Sentinel-1 images are mostly acquired in the extra-wide (EW) mode with a dual HH/HV polarization. This differs from most previous studies 
+on SAR oil slick mapping, which more often used the interferometric-wide (IW) mode acquired in the dual VV/VH polarization. Little work has until now addressed transfer learning between SAR acquisition modes, 
+and natural oil slick events represent a prime example for a real-life application of deep learning segmentation with restricted labels. 
+
+\section{Data and methods}
+\subsection{Data}
+Evidence of two intermittent seep areas were recently documented in the Norwegian territorial waters. The first is located west of the Svalbard archipelago, offshore Prins Karls Forland (10.42°E, 78.49°N). 
+It was revealed and thoroughly studied by Panieri et al. \cite{panieriArcticNaturalOil2024}. In 70 images in between 2015 and 2024, we manually delineated 81 oil slicks extending from a common seeping point.
+The second area, located in the Barents Sea, was documented in \cite{serovWidespreadNaturalMethane2023} (but see also \cite{ivanovSearchDetectionNatural2020}). We mapped over 200 natural oil slicks from 88 images between 
+2015 and 2020 over a spread-out area (31.33 - 32.37°E, 75.15°N - 75.35°N) in Sentralbanken high. This area is part of an active petroleum system with prospective hydrocarbon potential, though it remains largely 
+underexplored \cite{lundschienNorthBarentsComposite2025}. Over those two seeps, labeled samples from Sentinel-1 EW images using the horizontal co-polarization (HH) band consistute the \textit{target domain}, $\mathit{D}_t$. 
+At a lower latitude, oil slicks of various kinds can be observed in the North Sea, an hydrocarbon-rich and seepage-active region. \cite{juddSeabedFluidFlow2009,hovlandSeabedPockmarksSeepages1988}. 
+With the same procedure as for the $\mathit{D}_t$, 1138 slicks were mapped in 361 images, but this time using the vertical co-polarization (VV) band of IW images. Here, labeled samples in the North Sea constitute the 
+\textit{source domain}, $\mathit{D}_s$. Slicks numbers are given as an approximate, since often one or two slicks might have the same source, yet be mapped separately if their extent was not fully connected.
+
+\subsection{Methods}
+Our approach of transfer learning focuses on domain adaptation. In remote sensing, traditional domain adaptation methods imply that the $\mathit{D}_t$ and the $\mathit{D}_s$ have similar probability distributions 
+between a common feature vector xi and a common label yi \cite{tuiaDomainAdaptationClassification2016}. In the case of deep learning (deep transfer learning) the 
+
+We trained two deep learning models: DeepLabV3 and the Segment Anything Model (SAM). DeepLabV3 is a fully convolutional neural network architecture for semantic segmentation which uses atrous convolutions 
+and introduced atrous spatial pooling layers \cite{chenDeepLabSemanticImage2018}. On the other hand, SAM is a zero-shot learning vision transformer for segmentation \cite{kirillovSegmentAnything2023}. 
+While the SAM itself does not assign classes, a variation implemented in the arcgis learn module extends its use to classification by trainable classification layers to the SAM's mask encoder 
+\cite{esrideveloperFinetuneSegmentAnything2025}. Each model was trained for a maximum of 100 epochs, but using early-stopping, a commonly used way of limiting overfitting \cite{wangGeneralizingFewExamples2020}.
+Two series of models were computed with two different backbones, since it was unknown whether a deep or a shallow model would perform best. For Deeplab, we used the ResNet-50 and ResNet-101 backbones, and for SAM, 
+the ViT-B and Vit-L model checkpoints. ADD ABOUT DATA augm BATCH SIZE - DROPOUT ETC.
+
+To calculate the gradients and update the parameters during training, a weighted binary cross-entropy loss function was used , defined by
+\[
+    L_\textit{CE} = -\frac{w}{N} \sum_{i=1}^{N} \left[ y_i \log(\hat{y}_i) + (1 - y_i) \log(1 - \hat{y}_i) \right]
+\]
+
+where \( w \) is the weight adjusting parameter, calculated as the inversely proportional scalar to the frequency of pixels per class \( w = \frac{P_c}{P} \) with \( P_C \) being the number of pixels 
+of a given class \( C \).
+
+Due to the particularly large pixel-number imbalance between the oil and water classes, we added a weighting term based on the segmentation Dice loss \cite{milletariVNetFullyConvolutional2016}:
+% \begin{math}
+\[
+    L_\text{Dice} = 1 - \frac{2 \sum_{i=1}^{N} y_i \hat{y}_i}{\sum_{i=1}^{N} y_i + \sum_{i=1}^{N} \hat{y}_i}
+\]
+% \end{math}
+This results in a simplified and version of the Combo loss from \cite{taghanakiComboLossHandling2019}, which gives the weighted loss function:
+\[
+    L_W = (1 - \alpha) \cdot L_\textit{CE} + \alpha \cdot L_\text{Dice}
+\]
+where $\alpha$ is a tunable hyperparameter in the form of a float number between 0 and 1, indicating the dice loss fraction. 
+
+Out of the 158 annotated Sentinel-1 EW HH scenes from the $\mathit{D}_t$, 128 were kept as a training split and 30 as a test split – about 19\%. Using bootstrapped sets from the training split, we trained
+10 models for each power of 2 in the set \( N = \{ 2, 4, 8, 16, 32, 64\} \), where \( N \) is the number of training samples. Only one model was computed at \( N = 128\), using the full training set. For each model,
+the Dice score was computed on the test split, allowing to calculate a 95\% statistical interval using the approach for classification recommended in \cite{burkovMachineLearningEngineering2020}.
+
+Augmentation details: train deep learning page arcpy
+Cross-entropy dice loss SaMED
+
+
+\section{Results and Discussion}
+
+Overfitting is the most important risk of training with very limited samples. 
+Dropout
+We find that freezing backbone weights improve. Converting to a 8bit raster with values rescaled on a 0,255 range provided similar performance with shorter inference time due to GPU processing larger batches. 
+The smaller raster file format might also help with storage limitations.
+
+\section{Conclusion}
+Applications of transfer learning must be carefully evaluated, since in many cases its use can turn out inefficient, even detrimental if the context are too different \cite{mensinkFactorsInfluenceTransfer2022}.
+In this study, we confirmed the potential of this approach by making use of labeled oil slicks in a different context to enhance the segmentation of natural oil slicks. We detailed pre-processing steps to
+align Sentinel-1 SAR images captured in different acquisiton modes. These steps are crucial to ensure transferrable, high-level features between the source and the target domain. 
+
+Running two different deep learning models served not only for comparing purposes but also to extend our observations to a different model architecture. 
+Convolutional nets can be rather limited do distribution shifts (domain change) \cite{hoffmanOneShotAdaptationSupervised2014,djolongaRobustnessTransferabilityConvolutional2021}
+In both the convolutional neural network, DeepLabV3, and the vision transformer, SAM, 
+yielded similar results.
+
+
+% We found that very high dropout can improve model performance, especially when training with fewer samples. Considering the link between $\mathit{L_2}$-regularization and dropout \cite{wagerDropoutTrainingAdaptive2013}, 
+% this finding is in line with Zhai et al. \cite{zhaiScalingVisionTransformers2022}, who found that a very strong L2-regularization reduced overfitting in the case of few-shot learning of a vision transformer. 
+
+
+This study learning between two different SAR acquisition.
+A similar approach of two-stage fine-tuning was used for oil spill segmentation by Bianchi et al. \cite{bianchiLargeScaleDetectionCategorization2020a}, but instead downsizing resolution as the pretraining dataset.
+Our best-performing model show comparable performance for natural oil slicks, needing only a small number of labeled samples, thus reducing computational costs and training time.
+
+\section*{Acknowledgments}
+Julien Vadnais received financial support from the Doctoral Research Scholarship of the Fonds de recherche du Québec.
+
+{\appendix[Appendix A]
+Write appendix or enter here
+}
+
+% \section{References}
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+
+\end{document}

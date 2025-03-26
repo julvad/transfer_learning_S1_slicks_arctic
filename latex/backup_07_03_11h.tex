@@ -1,0 +1,142 @@
+\documentclass[journal]{IEEEtran}
+\usepackage{amsmath,amsfonts}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{array}
+\usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
+\usepackage{textcomp}
+\usepackage{stfloats}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{cite}
+
+\begin{document}
+
+\title{Transfer learning between Sentinel-1 acquisition modes enhances \\ the segmentation of natural oil slick events in the Arctic}
+
+\author{Julien Vadnais,~\IEEEmembership{Graduate Student Member,~IEEE, }Benjamin Aubrey Robson, Christian Haug Eide, Rune Mattingsdal, Malin Johansson
+        % <-this % stops a space
+\thanks{Manuscript received April 19, 2021; revised August 16, 2021. This research was carried out in the context of the InFluSe project (NFR Project No.?).}
+
+%grouped affiliations
+% \thanks{Julien Vadnais, Benjamin Aubrey Robson, and Christian Haug Eide are with the Department of Earth Science, University of Bergen, 5020 Bergen, Norway.
+% Rune Mattingsdal is with the Norwegian Offshore Directorate, 9406 Harstad, Norway.
+% Malin Johansson is with the Department of Physics and Technology, The Arctic University of Norway, 9037 Tromsø, Norway. Corresponding author email address: julien.vadnais@uib.no} 
+
+%separate affilations
+\thanks{Julien Vadnais, Benjamin Aubrey Robson, and Christian Haug Eide are with the Department of Earth Science, University of Bergen, 5020 Bergen, Norway.}
+\thanks{Rune Mattingsdal is with the Norwegian Offshore Directorate, 9406 Harstad, Norway.}
+\thanks{Malin Johansson is with the Department of Physics and Technology, The Arctic University of Norway, 9037 Tromsø, Norway.}
+\thanks{Corresponding author email address: julien.vadnais@uib.no. This article has supplementary available in the GitHub repository at $https:/github.com/julvad/temp_repo_a0$}
+
+\thanks{}% <-this % stops a space
+}
+
+% The paper headers
+\markboth{\LaTeX\ PDF, IEEE GEOSCIENCE AND REMOTE SENSING LETTERS,~Vol.~14, No.~8, March~2025}%
+{Shell \MakeLowercase{\textit{et al.}}: A Sample Article Using IEEEtran.cls for IEEE Journals}
+
+\IEEEpubid{\copyright This work is licensed under CC BY 4.0.}
+% Remember, if you use this you must call \IEEEpubidadjcol in the second
+% column for its text to clear the IEEEpubid mark.
+
+\maketitle
+
+\begin{abstract}
+    This document describes the most common article elements and how to use the IEEEtran class with \LaTeX \ to produce files that are suitable for submission to the IEEE.  
+    IEEEtran can produce conference, journal, and technical note (correspondence) papers with a suitable choice of class options. 
+    This document describes the most common article elements and how to use the IEEEtran class with \LaTeX \ to produce files that are suitable for submission to the IEEE.  
+    IEEEtran can produce conference, journal, and technical note (correspondence) papers with a suitable choice of class options. 
+    This document describes the most common article elements and how to use the IEEEtran class with \LaTeX \ to produce files that are suitable for submission to the IEEE.  
+    IEEEtran can produce conference, journal, and technical note (correspondence) papers with a suitable choice of class options. 
+    This document describes the most common article elements and how to use the IEEEtran class with \LaTeX \ to produce files that are suitable for submission to the IEEE.  
+    The entirety of the data and Python code used in this study are provided in an open-access online repository.
+\end{abstract}
+
+\begin{IEEEkeywords}
+    Article submission, IEEE, IEEEtran, journal, \LaTeX, paper, template, typesetting.
+\end{IEEEkeywords}
+
+\section{Introduction}
+\IEEEPARstart{M}{onitoring} offshore oil bodies has long  been one of the principle applications of remote sensing oceanography. 
+The first observations of oil slicks in satellite imagery go back to the early 1970s \cite{deutschUseLandsatData1977,stumpfERTS1ViewsOil1974}, 
+making an important shift in the topic which previously relied on airborne remote sensing systems. Early research, and most of the attention on the topic until now, 
+has been dedicated to anthropogenic oil spills, but oil slicks can also originate from natural processes. 
+Natural oil slicks hint at an underlying seep on the seabed beneath, resulting from the upward migration and the release of hydrocarbons from reservoir rocks to the surface
+\cite{huntPetroleumGeochemistryGeology1979,linkSignificanceOilGas1952,juddSeabedFluidFlow2009,marshakEarthPortraitPlanet2005}.
+
+Natural seepage is a significant contributor of oil entering marine environments \cite{kvenvoldenNaturalSeepageCrude2003}, yet the data required to update quantitative
+estimates of its global scale remain insufficient, especially outside of the United States continental shelf \cite{nationalacademiesofsciencesengineeringandmedicineOilSeaIV2022}. Data scarcity, 
+due to difficulties in monitoring remote offshore areas and the challenge of continuous temporal observation, has limited possibilities to study the ecosystem contributions 
+and global behavior of natural hydrocarbon seepages. Among satellite-mounted imaging sensors, synthetic aperture radar (SAR), is well suited to this task due to its capacity to operate in any lighting conditions, 
+its fine spatial resolution and its wide swath coverage. Our capacity for detecting a slick in a given SAR image relies on the damping ratio, the contrast between radar backscatter in slick and oil-free pixels 
+\cite{hovlandSlickDetectionSAR1994,quigleyInvestigationDampingRatio2023}. By reducing sea surface roughness, which reduces radar backscatter, bodies of oil can be discernible from surrounding waters \cite{brekkeSAROilSpill2020,fingasReviewOilSpill2018,alpersOilsSurfactants2004}. 
+Numerous frameworks have been proposed to leverage SAR for automatizing slick detection using computer vision algorithms.
+They face a common challenge which has been an ongoing topic of research over the past three decades: the presence of many oil slicks lookalikes including ocean eddies, biogenic slicks and newly-formed ice
+\cite{johanssonCanMineralOil2020,hovlandSlickDetectionSAR1994,alpersOilsSurfactants2004,alpersOilSpillDetection2017,espedalSatelliteDetectionNatural1996}. When exposed to a large number of labeled examples, 
+deep learning algorithms, currently the benchmark in computer vision, can capture complex shape- and texture-related features for image classification or segmentation tasks \cite{goodfellowDeepLearning2016}. 
+Although this approach can prove a powerful discriminator of slick lookalikes, it is known that when trained with limited sample sizes, models struggle to extract more abstract, more generalizable 
+higher-level features \cite{bengioDeepLearnersBenefit2011,bengioDeepLearningRepresentations2012}. 
+
+The issue of limited labeled data is inherent to machine-learning-based SAR oil slick mapping. 
+\IEEEpubidadjcol 
+Firstly, depending on thickness and weather conditions, slicks will only last a few hours on the surface, on average 3 
+\cite{jatiaultMonitoringNaturalOil2017} to 6 hours \cite{daneshgaraslHindcastModelingOil2017,oreillyDistributionMagnitudeVariability2022}, shorter than what was previously thought 
+\cite{macdonaldNaturalOilSpills1998,macdonaldNaturalUnnaturalOil2015}. Furthermore, the visibility of slicks is dependent on surface wind conditions. Outside of a restrained wind-speed window, 
+the sea either exhibits too many or too few capillary waves to produce a discriminative damping ratio \cite{quigleyInvestigationDampingRatio2023,sausDetectionDelineationProduced2021,gadeImagingBiogenicAnthropogenic1998}. 
+Lastly, slick events are highly intermittent. We observed considerable variation in seepage rates across both monthly and yearly timescales, with most active slicks having an occurence rate below 10\% 
+\cite{jatiaultNaturalOilSeep2024,oreillyDistributionMagnitudeVariability2022}. Some seeps might stay dormant for several months or years before leaking oil again. In two different regions, it was found that only
+half of the seeps show activity \cite{jatiaultMonitoringNaturalOil2017,garcia-pinedaRemotesensingEvaluationGeophysical2010}, and it is not unsound to believe that this value might be even higher, 
+given that such seeps are logically less likely to be discovered.
+
+In this paper, we assess the potential of transfer learning for enhancing the automatic mapping of natural slicks. 
+We use deep learning models pre-trained on Sentinel-1 SAR observations in the North Sea, and then fine-tune models trained and validated on two known slick events in the Arctic, on which we have only limited observations.
+Over the Arctic, Sentinel-1 images are mostly acquired in the extra-wide (EW) mode with a dual HH/HV polarization. This differs from most previous studies on SAR oil slick mapping, which more often used the 
+interferometric-wide (IW) mode with a dual VV/VH polarization. Little work has until now addressed transfer learning between SAR acquisition modes, and natural oil slick events represent 
+a prime example for a real-life application of deep learning segmentation with restricted labels. 
+
+\section{Data and methods}
+\subsection{Data}
+Evidence of two intermittent seep areas were recently documented in the Norwegian territorial waters. The first is located west of the Svalbard archipelago, offshore Prins Karls Forland (10.42°E; 78.49°N). 
+It was revealed and thoroughly studied by Panieri et al. \cite{panieriArcticNaturalOil2024}. Oil slicks extending from a single seeping point were manually delineated in 26 images in 2020 and 2021. 
+The second area, located in the Barents Sea, was documented in \cite{serovWidespreadNaturalMethane2023} (but see also \cite{ivanovSearchDetectionNatural2020}). Natural oil slicks from 90 images between 2015 and 2020 
+were mapped over a spread-out area (31.33 - 32.37°E, 75.15°N - 75.35°N) in Sentralbanken high, where is located an active petroleum system with prospective hydrocarbon potential, though it remains largely underexplored."
+\cite{lundschienNorthBarentsComposite2025}. REPHRASE Sentinel-1 extrawide images using the horizontal co-polarization (HH) band. This is our \textit{target domain}.
+
+
+The North Sea to hydrocarbon seepages \cite{juddSeabedFluidFlow2009,hovlandSeabedPockmarksSeepages1988}
+
+In this, work, labeled slicks in S1 IW VV rasters constitute the \textit{source Domain},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Conclusion}
+The conclusion goes here.
+
+
+\section*{Acknowledgments}
+Julien Vadnais received financial support from the Doctoral Research Scholarship of the Fonds de recherche du Québec.
+
+{\appendix[Appendix A]
+Write appendix or enter here
+}
+
+% \section{References}
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+
+\end{document}
