@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.21)  26 MAR 2025 17:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.21)  27 MAR 2025 21:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -471,7 +471,7 @@ Package pdftex.def Info: figures/layout2.png  used on input line 108.
 
 
 [2 <./figures/layout2.png>]
-<figures/deeplab_dice_temp.png, id=145, 509.7444pt x 271.0125pt>
+<figures/deeplab_dice_temp.png, id=143, 509.7444pt x 271.0125pt>
 File: figures/deeplab_dice_temp.png Graphic file (type png)
 <use figures/deeplab_dice_temp.png>
 Package pdftex.def Info: figures/deeplab_dice_temp.png  used on input line 163.
@@ -480,7 +480,7 @@ LaTeX Font Info:    Trying to load font information for OT1+phv on input line 16
  (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
-<figures/samlora_dice_temp.png, id=147, 509.7444pt x 271.0125pt>
+<figures/samlora_dice_temp.png, id=145, 509.7444pt x 271.0125pt>
 File: figures/samlora_dice_temp.png Graphic file (type png)
 <use figures/samlora_dice_temp.png>
 Package pdftex.def Info: figures/samlora_dice_temp.png  used on input line 166.
@@ -490,25 +490,20 @@ Package pdftex.def Info: figures/samlora_dice_temp.png  used on input line 166.
 
 
 [3 <./figures/deeplab_dice_temp.png> <./figures/samlora_dice_temp.png>]
-<figures/preds4x3_v2.png, id=190, 906.0249pt x 696.9237pt>
+<figures/preds4x3_v2.png, id=188, 906.0249pt x 696.9237pt>
 File: figures/preds4x3_v2.png Graphic file (type png)
 <use figures/preds4x3_v2.png>
-Package pdftex.def Info: figures/preds4x3_v2.png  used on input line 224.
+Package pdftex.def Info: figures/preds4x3_v2.png  used on input line 221.
 (pdftex.def)             Requested size: 448.07378pt x 344.66458pt.
 
 
-(./manuscript.bbl
-
-[4 <./figures/preds4x3_v2.png>]
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
-[]\OT1/ptm/m/n/8 Esri, ``Fine-tune Seg-ment Any-thing Model us-ing Sam-LoRA,''
- []
+[4 <./figures/preds4x3_v2.png>] (./manuscript.bbl
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
-\OT1/ptm/m/n/8 https://developers.arcgis.com/python/latest/guide/finetune-sam-using-
+Underfull \hbox (badness 5460) in paragraph at lines 120--121
+[]\OT1/ptm/m/n/8 Esri, ``Fine-tune Seg-ment Any-thing Model (SAM) us-ing Sam-
  []
 
 )
@@ -522,18 +517,18 @@ Package rerunfilecheck Info: File `manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: 4A0338A91B565EE38DBBF7C37A9E30A1;747.
  ) 
 Here is how much of TeX's memory you used:
- 11975 strings out of 473201
- 196987 string characters out of 5711963
- 620400 words of memory out of 5000000
- 34978 multiletter control sequences out of 15000+600000
+ 11973 strings out of 473201
+ 196902 string characters out of 5711963
+ 620338 words of memory out of 5000000
+ 34977 multiletter control sequences out of 15000+600000
  605517 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,79p,669b,548s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,79p,586b,548s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on manuscript.pdf (5 pages, 7127298 bytes).
+Output written on manuscript.pdf (5 pages, 7126850 bytes).
 PDF statistics:
- 310 PDF objects out of 1000 (max. 8388607)
- 253 compressed objects within 3 object streams
- 70 named destinations out of 1000 (max. 500000)
+ 308 PDF objects out of 1000 (max. 8388607)
+ 251 compressed objects within 3 object streams
+ 69 named destinations out of 1000 (max. 500000)
  77 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -144,9 +144,9 @@ in which \( X' \) is the new value of image pixels \( X \), using the mean \( \m
 We pretrained two deep learning models: DeepLabv3 and the Segment Anything Model (SAM). DeepLabv3 is a convolutional neural network architecture for semantic segmentation which uses atrous convolutions 
 and introduced atrous spatial pooling layers \cite{chenDeepLabSemanticImage2018}. It is considered state-of-the-art in many fields of application including remote sensing \cite{tuiaDeepLearningbasedSemantic2021}. 
 SAM is a novel zero-shot learning vision transformer for image segmentation \cite{kirillovSegmentAnything2023}. While SAM itself does not assign classes, the SamLoRA variation extends its 
-use by adding trainable classification layers to SAM's mask encoder \cite{esrideveloperFinetuneSegmentAnything2025}. Data augmentation was generated in the form of a 30° rotation, brightness and contrast shifts, 
+use by adding trainable classification layers to SAM's mask encoder \cite{esriFinetuneSegmentAnything2025}. Data augmentation was generated in the form of a 30° rotation, brightness and contrast shifts, 
 soft zooms and croppings. We trained with two backbones to see if a deep or a shallow model would perform best. For DeepLabv3, we used the ResNet-50 and ResNet-101 backbones \cite{heDeepResidualLearning2015}; 
-ViT-B and ViT-L checkpoints for SAM \cite{kirillovSegmentAnything2023}. The learning rate was determined from a pretraining learning curve \cite{smithCyclicalLearningRates2017,howardFastaiLayeredAPI2020}. 
+ViT-B and ViT-L checkpoints for SAM \cite{kirillovSegmentAnything2023}. The learning rate was determined from a pretraining learning curve \cite{howardFastaiLayeredAPI2020}. 
 We used a training batch size of 64 for the 256x256 tiles, and 16 for the 512x512 tiles. 
 
 Model inference was performed in Python using ArcPy and PyTorch, with a RTX 4500 Ada Generation GPU.
@@ -167,9 +167,6 @@ we added a term based on slick class Dice loss \( (L_\text{Dice}) \) from \cite{
     \caption{Average test-set Dice score with 95\% statistical interval, depending on the number of training images. \quad (a) DeepLabv3 \quad (b) SamLoRA }
     \label{figure2}
 \end{figure*}
-% \begin{equation}
-%     L_\text{Dice} = 1 - \frac{2 \sum_{i=1}^{N} y_i \hat{y}_i}{\sum_{i=1}^{N} y_i + \sum_{i=1}^{N} \hat{y}_i}
-% \end{equation}
 % This gives a simplified version of the Combo loss from \cite{taghanakiComboLossHandling2019}, 
 This results in the Dice-weighted loss function:
 \begin{equation}
@@ -234,8 +231,6 @@ of natural slicks in SAR images, where several dark features may trigger false d
 false positives, despite a somewhat undervalued Dice score. The bottom row examplifies one of the most challenging cases for SAR slick mapping. If two low-contrast slicks can be seen among lookalike features,
 only the main one is detected by the fine-tuned model, illustrating the ongoing challenge of mapping under harsh observation conditions. 
 
-
-% %% MOVE TO APPENDIX?
 \section{Conclusion}
 Applications of transfer learning must be carefully evaluated, since in many cases its use can be inefficient, even detrimental if the contexts are too different \cite{mensinkFactorsInfluenceTransfer2022}.
 In this study, we made use of labeled slicks of a different kind, from a different area, and imaged in a different SAR acquisition mode. 
@@ -249,12 +244,9 @@ Overall, our findings highlight the potential of transfer learning. This approac
 with practical applications such as monitoring natural seepage in remote marine environments. 
 
 \section*{Acknowledgments}
-Julien Vadnais received financial support from the Doctoral Research Scholarship of the Fonds de recherche du Québec.
+Julien Vadnais received financial support from the Doctoral Research Scholarship of the Fonds de recherche du Québec. 
+The authors would like to thank the EU Copernicus programme for allowing open access to the Sentinel-1 archives.
 
-% {\appendix[Appendix A]
-% Write appendix or enter here
-% }
-% \section{References}
 \bibliographystyle{IEEEtran}
 \bibliography{references}
 
