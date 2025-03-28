@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex manuscript"] 1743106882.21557 "manuscript.aux" "manuscript.bbl" "manuscript" 1743106888.96705 0
+["bibtex manuscript"] 1743106882.21557 "manuscript.aux" "manuscript.bbl" "manuscript" 1743163109.04534 0
   "./references.bib" 1743106787 80220 3f5b88f48924fcaa93acc014f7a1d352 ""
   "c:/Users/juvad3723/texlive/2024/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1740166200 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "manuscript.aux" 1743106887 8406 133083dae5bc16a2ab58f6f094abb03b "pdflatex"
+  "manuscript.aux" 1743163107 8406 133083dae5bc16a2ab58f6f094abb03b "pdflatex"
   (generated)
   "manuscript.bbl"
   "manuscript.blg"
   (rewritten before read)
-["pdflatex"] 1743106882.70751 "c:/Users/juvad3723/.1/--Projects/GitHub/transfer_learning_S1_slicks_arctic/latex/manuscript.tex" "manuscript.pdf" "manuscript" 1743106888.96763 0
+["pdflatex"] 1743163102.89081 "c:/Users/juvad3723/.1/--Projects/GitHub/transfer_learning_S1_slicks_arctic/latex/manuscript.tex" "manuscript.pdf" "manuscript" 1743163109.04613 0
   "IEEEtran.cls" 1732553293 288451 7379a03af5f3d0dad26db23a43c3a726 ""
-  "c:/Users/juvad3723/.1/--Projects/GitHub/transfer_learning_S1_slicks_arctic/latex/manuscript.tex" 1743106888 24753 500561d28d9cf73a38952928b74d63b1 ""
+  "c:/Users/juvad3723/.1/--Projects/GitHub/transfer_learning_S1_slicks_arctic/latex/manuscript.tex" 1743163102 24760 3490b9d831fcfdb931e7d794f8f09495 ""
   "c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1740165535 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1740165860 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr7t.tfm" 1740166092 2520 53e01eef820ca829e42c1333c3fd02b9 ""
@@ -142,10 +142,10 @@
   "figures/layout2.png" 1741961282 3399970 73d5bd4c8b0b966f0df14cfd9eb04208 ""
   "figures/preds4x3_v2.png" 1742909905 2723421 f043646ae156483da108f7c58c06fd37 ""
   "figures/samlora_dice_temp.png" 1742844679 147582 28f3ec984006df5c800c64f2f2c5e0d9 ""
-  "manuscript.aux" 1743106887 8406 133083dae5bc16a2ab58f6f094abb03b "pdflatex"
+  "manuscript.aux" 1743163107 8406 133083dae5bc16a2ab58f6f094abb03b "pdflatex"
   "manuscript.bbl" 1743106882 12689 e90b4b80d4340b85c8c1ad1ad633accc "bibtex manuscript"
-  "manuscript.out" 1743106887 747 4a0338a91b565ee38dbbf7c37a9e30a1 "pdflatex"
-  "manuscript.tex" 1743106888 24753 500561d28d9cf73a38952928b74d63b1 ""
+  "manuscript.out" 1743163107 747 4a0338a91b565ee38dbbf7c37a9e30a1 "pdflatex"
+  "manuscript.tex" 1743163102 24760 3490b9d831fcfdb931e7d794f8f09495 ""
   (generated)
   "manuscript.aux"
   "manuscript.log"
