@@ -1,6 +1,6 @@
 # Ignore the datasets folder
 /data/s1
-/data/fig_samples
+# /data/fig_samples
 /data/pred
 /data/training_samples
 
