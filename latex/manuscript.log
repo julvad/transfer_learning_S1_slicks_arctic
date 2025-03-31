@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.21)  28 MAR 2025 12:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.21)  31 MAR 2025 13:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -386,31 +386,73 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
 \Hy@SectionHShift=\skip64
-) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+ (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+ (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/soul/soul.sty
+Package: soul 2023-06-14 v3.1 Permit use of UTF-8 characters in soul (HO)
+ (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/soul/soul-ori.sty
+Package: soul-ori 2023-06-14 v3.1 letterspacing/underlining (mf)
+\SOUL@word=\toks30
+\SOUL@lasttoken=\toks31
+\SOUL@syllable=\toks32
+\SOUL@cmds=\toks33
+\SOUL@buffer=\toks34
+\SOUL@token=\toks35
+\SOUL@syllgoal=\dimen260
+\SOUL@syllwidth=\dimen261
+\SOUL@charkern=\dimen262
+\SOUL@hyphkern=\dimen263
+\SOUL@dimen=\dimen264
+\SOUL@dimeni=\dimen265
+\SOUL@minus=\count320
+\SOUL@comma=\count321
+\SOUL@apo=\count322
+\SOUL@grave=\count323
+\SOUL@spaceskip=\skip65
+\SOUL@ttwidth=\dimen266
+\SOUL@uldp=\dimen267
+\SOUL@ulht=\dimen268
+) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count320
+\l__color_backend_stack_int=\count324
 \l__pdf_internal_box=\box60
 ) (./manuscript.aux)
 \openout1 = `manuscript.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
 
 -- Lines per column: 58 (exact).
 Package caption Info: Begin \AtBeginDocument code.
@@ -418,33 +460,33 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count321
-\scratchdimen=\dimen260
+\scratchcounter=\count325
+\scratchdimen=\dimen269
 \scratchbox=\box61
-\nofMPsegments=\count322
-\nofMParguments=\count323
-\everyMPshowfont=\toks30
-\MPscratchCnt=\count324
-\MPscratchDim=\dimen261
-\MPnumerator=\count325
-\makeMPintoPDFobject=\count326
-\everyMPtoPDFconversion=\toks31
+\nofMPsegments=\count326
+\nofMParguments=\count327
+\everyMPshowfont=\toks36
+\MPscratchCnt=\count328
+\MPscratchDim=\dimen270
+\MPnumerator=\count329
+\makeMPintoPDFobject=\count330
+\everyMPtoPDFconversion=\toks37
 ) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 16.
+Package hyperref Info: Link coloring OFF on input line 19.
  (./manuscript.out) (./manuscript.out)
 \@outlinefile=\write3
 \openout3 = `manuscript.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 46.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 49.
  (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 49.
  (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -454,61 +496,67 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 96.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 107.
 (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [1{c:/Users/juvad3723/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
 
 ]
-<figures/layout2.png, id=96, 867.24pt x 867.24pt>
-File: figures/layout2.png Graphic file (type png)
-<use figures/layout2.png>
-Package pdftex.def Info: figures/layout2.png  used on input line 108.
+<figures/layout2_grids.png, id=98, 867.24pt x 867.24pt>
+File: figures/layout2_grids.png Graphic file (type png)
+<use figures/layout2_grids.png>
+Package pdftex.def Info: figures/layout2_grids.png  used on input line 120.
 (pdftex.def)             Requested size: 238.49121pt x 238.48512pt.
 
 
 
 
-[2 <./figures/layout2.png>]
-<figures/deeplab_dice_temp.png, id=143, 509.7444pt x 271.0125pt>
+[2 <./figures/layout2_grids.png>]
+<figures/deeplab_dice_temp.png, id=145, 509.7444pt x 271.0125pt>
 File: figures/deeplab_dice_temp.png Graphic file (type png)
 <use figures/deeplab_dice_temp.png>
-Package pdftex.def Info: figures/deeplab_dice_temp.png  used on input line 163.
+Package pdftex.def Info: figures/deeplab_dice_temp.png  used on input line 175.
 (pdftex.def)             Requested size: 229.81807pt x 122.18607pt.
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 163.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 175.
  (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
-<figures/samlora_dice_temp.png, id=145, 509.7444pt x 271.0125pt>
+<figures/samlora_dice_temp.png, id=147, 509.7444pt x 271.0125pt>
 File: figures/samlora_dice_temp.png Graphic file (type png)
 <use figures/samlora_dice_temp.png>
-Package pdftex.def Info: figures/samlora_dice_temp.png  used on input line 166.
+Package pdftex.def Info: figures/samlora_dice_temp.png  used on input line 178.
 (pdftex.def)             Requested size: 229.81807pt x 122.18607pt.
 
 
 
 
 [3 <./figures/deeplab_dice_temp.png> <./figures/samlora_dice_temp.png>]
-<figures/preds4x3_v2.png, id=188, 906.0249pt x 696.9237pt>
-File: figures/preds4x3_v2.png Graphic file (type png)
-<use figures/preds4x3_v2.png>
-Package pdftex.def Info: figures/preds4x3_v2.png  used on input line 221.
+<figures/preds4x3_v2_scale.png, id=191, 906.0249pt x 696.9237pt>
+File: figures/preds4x3_v2_scale.png Graphic file (type png)
+<use figures/preds4x3_v2_scale.png>
+Package pdftex.def Info: figures/preds4x3_v2_scale.png  used on input line 232.
 (pdftex.def)             Requested size: 448.07378pt x 344.66458pt.
 
 
 
 
-[4 <./figures/preds4x3_v2.png>] (./manuscript.bbl
+[4 <./figures/preds4x3_v2_scale.png>] (./manuscript.bbl
 
 
-Underfull \hbox (badness 5460) in paragraph at lines 120--121
+Underfull \hbox (badness 5460) in paragraph at lines 123--124
 []\OT1/ptm/m/n/8 Esri, ``Fine-tune Seg-ment Any-thing Model (SAM) us-ing Sam-
  []
 
-)
 
-[5] (./manuscript.aux)
+
+[5])
+
+
+
+[6
+
+] (./manuscript.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -517,18 +565,18 @@ Package rerunfilecheck Info: File `manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: 4A0338A91B565EE38DBBF7C37A9E30A1;747.
  ) 
 Here is how much of TeX's memory you used:
- 11973 strings out of 473201
- 196902 string characters out of 5711963
- 620338 words of memory out of 5000000
- 34977 multiletter control sequences out of 15000+600000
- 605517 words of font info for 122 fonts, out of 8000000 for 9000
+ 12705 strings out of 473201
+ 208086 string characters out of 5711963
+ 647366 words of memory out of 5000000
+ 35686 multiletter control sequences out of 15000+600000
+ 605830 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,79p,586b,548s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,79p,586b,587s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on manuscript.pdf (5 pages, 7126866 bytes).
+Output written on manuscript.pdf (6 pages, 7295456 bytes).
 PDF statistics:
- 308 PDF objects out of 1000 (max. 8388607)
- 251 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 500000)
+ 315 PDF objects out of 1000 (max. 8388607)
+ 257 compressed objects within 3 object streams
+ 71 named destinations out of 1000 (max. 500000)
  77 words of extra memory for PDF output out of 10000 (max. 10000000)
 
