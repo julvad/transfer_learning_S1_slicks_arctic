@@ -48,16 +48,16 @@ Malin Johansson is with the Department of Physics and Technology, The Arctic Uni
 \maketitle
 
 \begin{abstract} 
-    Natural seepage is a significant contributor to marine hydrocarbon inputs. Remote and intermittent seeps are difficult to monitor \hl{in the field}, yet oil slicks can be observed from spaceborne 
-    \hl{synthetic aperture radar (SAR)} \hl{due to differences in their backscatter},
-    creating potential for automatic mapping. \hl{In mapping tasks such as} segmentation, deep learning models excel, whilst needing large amounts of labeled images.
-    To deal with scarcity of labeled images, transfer learning is an\hl{ }approach 
-    commonly used in computer vision, yet still underutilized in remote sensing. \hl{In the case of oil slicks,} differences between Sentinel-1 acquisition modes—such as the 
+    Natural seepage is a significant contributor to marine hydrocarbon inputs. Remote and intermittent seeps are difficult to monitor in the field, yet oil slicks can be observed from spaceborne 
+    synthetic aperture radar (SAR) due to differences in their backscatter,
+    creating potential for automatic mapping. In mapping tasks such as segmentation, deep learning models excel, whilst needing large amounts of labeled images.
+    To deal with scarcity of labeled images, transfer learning is an approach 
+    commonly used in computer vision, yet still underutilized in remote sensing. In the case of oil slicks, differences between Sentinel-1 acquisition modes—such as the 
     interferometric wide (IW) in the North Sea and extra-wide (EW) in the Arctic—complicate direct model transfer.
     % and limit the potential for transfer learning %% Does this contradict the point of the paper?
     Here, we present a use-case where transfer learning enhances the segmentation of natural oil slicks. We used labeled slicks in IW images in the North Sea to pretrain a series of DeepLabv3 and SAM models. 
     These models were then fine-tuned on EW-labeled slicks from two documented Arctic seeps on which we have only limited observations. Our results show clear evidence that transfer learning improves few-shot 
-    segmentation, even in challenging images with \hl{slick-like features}. Overall, \hl{few studies have addressed} transfer learning between SAR acquisition modes, and this work contributes to 
+    segmentation, even in challenging images with slick-like features. Overall, few studies have addressed transfer learning between SAR acquisition modes, and this work contributes to 
     better monitoring poorly understood or yet undiscovered natural oil seeps. 
 \end{abstract}
 
@@ -78,7 +78,7 @@ Many previous works have attempted to make use of the damping ratio for automati
 three decades: the presence of oil slicks lookalikes including ocean eddies, biogenic slicks and newly-formed ice \cite{johanssonCanMineralOil2020,hovlandSlickDetectionSAR1994,alpersOilsSurfactants2004,
 alpersOilSpillDetection2017,espedalSatelliteDetectionNatural1996}. 
 When trained with a large number of labeled examples, deep learning models, currently the benchmark in computer vision, can capture complex shape- and texture-related features for image classification or 
-segmentation tasks \cite{goodfellowDeepLearning2016}. When trained with a \hl{limited} sample size, however, these models struggle to extract more abstract, higher-level features
+segmentation tasks \cite{goodfellowDeepLearning2016}. When trained with a limited sample size, however, these models struggle to extract more abstract, higher-level features
 \cite{bengioDeepLearnersBenefit2011,bengioDeepLearningRepresentations2012}. The issue of limited data is exacerbated in the case of natural slicks mapping because of limited visibility. 
 Not only will slicks only last a few hours on the surface \cite{jatiaultMonitoringNaturalOil2017,daneshgaraslHindcastModelingOil2017,oreillyDistributionMagnitudeVariability2022}, 
 their visibility also depend on a specific window of surface wind conditions, outside of which the sea either has too many or too few capillary waves for a discriminative 
@@ -91,8 +91,8 @@ Slick events are also highly intermittent. Seepage rates vary considerably acros
 In this paper, we assess the potential of transfer learning for enhancing the automatic mapping of natural slicks. Transfer learning, or deep transfer learning in the case of deep learning, aims at 
 transferring valuable and generalizable features from one model to another, where the contexts are similar but the target distributions differ \cite{goodfellowDeepLearning2016}. 
 We pretrained two image segmentation models using oil slicks mapped in Sentinel-1 images over the North Sea. These models were then fine-tuned on two known seeps in the Arctic, for which we have only 
-limited observations. In the Arctic, Sentinel-1 scenes are mostly acquired in the extra-wide (EW) mode \hl{at a 25-meter resolution} with dual HH/HV polarization. However, elsewhere, oil slick mapping with 
-Sentinel-1 more commonly uses the interferometric-wide (IW) mode \hl{at a 10-meter resolution} with the VV polarization.
+limited observations. In the Arctic, Sentinel-1 scenes are mostly acquired in the extra-wide (EW) mode at a 25-meter resolution with dual HH/HV polarization. However, elsewhere, oil slick mapping with 
+Sentinel-1 more commonly uses the interferometric-wide (IW) mode at a 10-meter resolution with the VV polarization.
 %Over the Arctic, Sentinel-1 scenes are mostly acquired in the 25-m resolution extra-wide (EW) mode with a dual HH/HV polarization, whereas oil slick mapping with Sentinel-1 more often use the 
 %interferometric-wide (IW) mode, of 10-m pixel resolution with a dual VV/VH polarization. 
 Little work, if any, has so far addressed transfer learning between SAR acquisition modes, and we believe natural oil slicks make a 
@@ -249,7 +249,7 @@ We show that transfer learning in the form of fine-tuning is effective for the f
 despite accessing only a few examples in the target domain.
 
 Image processing to align SAR images is crucial to ensure transferable, high-level features between the source and the target domain—here interferometric-wide (IW) and extra-wide (EW) Sentinel-1 images.
-Given these conditions, both deep learning models benefited from transferring pretrained model weights, \hl{with DeepLab performing best overall although SAM achieves top accuracy with fewer training images.} 
+Given these conditions, both deep learning models benefited from transferring pretrained model weights, with DeepLab performing best overall although SAM achieves top accuracy with fewer training images.
 The analysis was validated using two documented seeps in the Arctic, where further research could potentially identify additional, undiscovered occurrences. 
 Overall, our findings highlight the potential of transfer learning. This approach remains underutilized in remote sensing, yet it is promising for addressing data scarcity, 
 with practical applications such as monitoring natural seepage in remote marine environments. 
