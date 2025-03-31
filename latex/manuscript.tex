@@ -79,7 +79,7 @@ three decades: the presence of oil slicks lookalikes including ocean eddies, bio
 alpersOilSpillDetection2017,espedalSatelliteDetectionNatural1996}. 
 When trained with a large number of labeled examples, deep learning models, currently the benchmark in computer vision, can capture complex shape- and texture-related features for image classification or 
 segmentation tasks \cite{goodfellowDeepLearning2016}. When trained with a limited sample size, however, these models struggle to extract more abstract, higher-level features
-\cite{bengioDeepLearnersBenefit2011,bengioDeepLearningRepresentations2012}. The issue of limited data is exacerbated in the case of natural slicks mapping because of limited visibility. 
+\cite{bengioDeepLearningRepresentations2012}. The issue of limited data is exacerbated in the case of natural slicks mapping because of limited visibility. 
 Not only will slicks only last a few hours on the surface \cite{jatiaultMonitoringNaturalOil2017,daneshgaraslHindcastModelingOil2017,oreillyDistributionMagnitudeVariability2022}, 
 their visibility also depend on a specific window of surface wind conditions, outside of which the sea either has too many or too few capillary waves for a discriminative 
 damping ratio \cite{quigleyInvestigationDampingRatio2023,sausDetectionDelineationProduced2021,gadeImagingBiogenicAnthropogenic1998}. 
@@ -112,9 +112,9 @@ This area is part of the Sentralbanken high, a geological structure with prospec
 There (31.33-32.37°E, 75.15°N-75.35°N), we mapped 250 natural slicks in 88 images between 2015 and 2020.
 At those two locations, labeled samples from the horizontal co-polarization (HH) band of Sentinel-1 EW images make the $\mathit{D}_T$ (Fig. \ref{figure1}a, \ref{figure1}b). 
 At lower latitudes, oil slicks of various kinds can be observed in the North Sea, an hydrocarbon-rich and seepage-active region \cite{juddSeabedFluidFlow2009,hovlandSeabedPockmarksSeepages1988}. 
-With the same procedure, we mapped over 1700 slicks, but this time using the vertical co-polarization (VV) band of 463 Sentinel-1 IW images. Here, labeled samples in the North Sea make the $\mathit{D}_S$ (Fig. \ref{figure1}c).
-Only the co-polarization bands were considered for their oil-discrimination capacity \cite{johanssonMultifrequencyPolarimetricSAR2017,brekkeSAROilSpill2020}, compared to cross-polarization bands.
-Since a slick can be split in more than one part if its extent is not fully connected, we give slicks numbers in Table \ref{table1} as approximations only.
+With the same procedure, we mapped over 1700 slicks, this time using the vertical co-polarization (VV) band of 463 Sentinel-1 IW images. Here, labeled samples in the North Sea make the $\mathit{D}_S$ (Fig. \ref{figure1}c).
+Only the co-polarization bands were used, considering their oil-discrimination capacity \cite{johanssonMultifrequencyPolarimetricSAR2017,brekkeSAROilSpill2020}.
+Since a slick can be split in more than one part if its extent is not fully connected, we give slick numbers in Table \ref{table1} as approximations only.
 \begin{figure}[!t]
     \centering
     \includegraphics[width=3.3in]{figures/layout2_grids.png} %3.3=left 3.5=right
@@ -158,7 +158,7 @@ and introduced atrous spatial pooling layers \cite{chenDeepLabSemanticImage2018}
 SAM is a novel zero-shot learning vision transformer for image segmentation \cite{kirillovSegmentAnything2023}. While SAM itself does not assign classes, the SamLoRA variation extends its 
 use by adding trainable classification layers to SAM's mask encoder \cite{esriFinetuneSegmentAnything2025}. Data augmentation was generated in the form of a 30° rotation, brightness and contrast shifts, 
 soft zooms and croppings. We trained with two backbones to see if a deep or a shallow model would perform best. For DeepLabv3, we used the ResNet-50 and ResNet-101 backbones \cite{heDeepResidualLearning2015}; 
-ViT-B and ViT-L checkpoints for SAM \cite{kirillovSegmentAnything2023}. The learning rate was determined from a pretraining learning curve \cite{howardFastaiLayeredAPI2020}. 
+ViT-B and ViT-L checkpoints for SAM \cite{kirillovSegmentAnything2023}. The learning rate was determined from a pretraining learning curve \cite{smithCyclicalLearningRates2017,howardFastaiLayeredAPI2020}. 
 We used a training batch size of 64 for the 256x256 tiles, and 16 for the 512x512 tiles. 
 
 Model inference was performed in Python using ArcPy and PyTorch, with a RTX 4500 Ada Generation GPU.
@@ -257,7 +257,6 @@ with practical applications such as monitoring natural seepage in remote marine 
 \section*{Acknowledgments}
 Julien Vadnais received financial support from the Doctoral Research Scholarship of the Fonds de recherche du Québec. 
 The authors would like to thank the EU Copernicus programme for allowing open access to the Sentinel-1 archives.
-
 \bibliographystyle{IEEEtran}
 \bibliography{references}
 

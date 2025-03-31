@@ -53,9 +53,6 @@ H.~A. Espedal, O.~M. Johannessen, and J.~Knulst, ``Satellite detection of natura
 \bibitem{goodfellowDeepLearning2016}
 I.~Goodfellow, Y.~Bengio, A.~Courville, and Y.~Bengio, \emph{Deep Learning}.\hskip 1em plus 0.5em minus 0.4em\relax MIT press Cambridge, 2016, vol.~1.
 
-\bibitem{bengioDeepLearnersBenefit2011}
-Y.~Bengio, F.~Bastien, A.~Bergeron, N.~{Boulanger--Lewandowski}, T.~Breuel, Y.~Chherawala, M.~Cisse, M.~C{\^o}t{\'e}, D.~Erhan, J.~Eustache, X.~Glorot, X.~Muller, S.~P. Lebeuf, R.~Pascanu, S.~Rifai, F.~Savard, and G.~Sicard, ``Deep {{Learners Benefit More}} from {{Out-of-Distribution Examples}},'' in \emph{Proceedings of the {{Fourteenth International Conference}} on {{Artificial Intelligence}} and {{Statistics}}}, Jun. 2011, pp. 164--172.
-
 \bibitem{bengioDeepLearningRepresentations2012}
 Y.~Bengio, ``Deep {{Learning}} of {{Representations}} for {{Unsupervised}} and {{Transfer Learning}},'' in \emph{Proceedings of {{ICML Workshop}} on {{Unsupervised}} and {{Transfer Learning}}}, Jun. 2012, pp. 17--36.
 
@@ -121,6 +118,9 @@ D.~Tuia, D.~Marcos, K.~Schindler, and B.~Le~Saux, ``Deep {{Learning}}-based {{Se
 
 \bibitem{esriFinetuneSegmentAnything2025}
 Esri, ``Finetune {{Segment Anything Model}} ({{SAM}}) using {{SamLoRA}},'' https://developers.arcgis.com/python/latest/guide/finetune-sam-using-samlora/, 2025.
+
+\bibitem{smithCyclicalLearningRates2017}
+L.~N. Smith, ``Cyclical {{Learning Rates}} for {{Training Neural Networks}},'' in \emph{2017 {{IEEE Winter Conference}} on {{Applications}} of {{Computer Vision}} ({{WACV}})}, Mar. 2017, pp. 464--472.
 
 \bibitem{howardFastaiLayeredAPI2020}
 J.~Howard and S.~Gugger, ``Fastai: {{A Layered API}} for {{Deep Learning}},'' \emph{Information}, vol.~11, no.~2, p. 108, Feb. 2020.
