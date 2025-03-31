@@ -48,6 +48,7 @@ main/
 │   ├── training_samples*/                # Processed training samples and labeled tiles
 |   ├── pred*/                            # Model predictions
 |   ├── model_results/                    # Tables of results (Dice scores on the test set)
+|   ├── fig_samples/                      # training samples used to produced Fig. 3
 ├── models/                   # deep learning model folders
 |   ├── pretrained*                       # Models pretrained on IW-VV S1 images in the North Sea
 |   ├── base*                             # Models trained solely on EW-HH images in the Arctic (with backbone/checkpoint weights)
@@ -61,7 +62,8 @@ main/
 │   └── figures.ipynb                     # code to generate figures
 ├── latex/                    # latex code for generating the manuscript    
 |   ├── figures                           # Output figures, maps, and plots
-|   ├── manuscript.tex                    # LaTeX manuscript file
+|   ├── manuscript.tex                    # Manuscript in LaTeX format
+|   ├── manuscript.pdf                    # Manuscript in PDF format
 |   ├── references.bib                    # BibTeX reference list
 ├── temp/                     # Temp folder for data processing
 ├── conda_env.yml             # Conda environment file with required Python libraries
