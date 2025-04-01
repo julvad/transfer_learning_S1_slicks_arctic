@@ -57,7 +57,7 @@ Malin Johansson is with the Department of Physics and Technology, The Arctic Uni
     % and limit the potential for transfer learning %% Does this contradict the point of the paper?
     Here, we present a use-case where transfer learning enhances the segmentation of natural oil slicks. We used labeled slicks in IW images in the North Sea to pretrain a series of DeepLabv3 and SAM models. 
     These models were then fine-tuned on EW-labeled slicks from two documented Arctic seeps on which we have only limited observations. Our results show clear evidence that transfer learning improves few-shot 
-    segmentation, even in challenging images with slick-like features. Overall, few studies have addressed transfer learning between SAR acquisition modes, and this work contributes to 
+    segmentation, even in challenging images with slick look-alikes. Overall, few studies have addressed transfer learning between SAR acquisition modes, and this work contributes to 
     better monitoring poorly understood or yet undiscovered natural oil seeps. 
 \end{abstract}
 
@@ -75,7 +75,7 @@ In precise terms, SAR's capacity for detecting a slick relies on the damping rat
 quigleyInvestigationDampingRatio2023}.
 
 Many previous works have attempted to make use of the damping ratio for automatizing marine oil detection, with varying results. They face a common challenge which has been an ongoing topic of research for over 
-three decades: the presence of oil slicks lookalikes including ocean eddies, biogenic slicks and newly-formed ice \cite{johanssonCanMineralOil2020,hovlandSlickDetectionSAR1994,alpersOilsSurfactants2004,
+three decades: the presence of oil slicks look-alikes including ocean eddies, biogenic slicks and newly-formed ice \cite{johanssonCanMineralOil2020,hovlandSlickDetectionSAR1994,alpersOilsSurfactants2004,
 alpersOilSpillDetection2017,espedalSatelliteDetectionNatural1996}. 
 When trained with a large number of labeled examples, deep learning models, currently the benchmark in computer vision, can capture complex shape- and texture-related features for image classification or 
 segmentation tasks \cite{goodfellowDeepLearning2016}. When trained with a limited sample size, however, these models struggle to extract more abstract, higher-level features
@@ -231,7 +231,7 @@ often need to be split in smaller tiles for processing, typically resulting in l
     \centering
     \includegraphics[width=6.2in]{figures/preds4x3_v2_scale.png}
     \caption{Top-1 model performance through examples. \quad Top row: An easier case, with some ocean eddies. \quad Middle: A more challenging example with 
-    various lookalike features. \quad Bottom: Arguably one of the most challenging cases. A small, low-contrast slick is missed by models in the center right of the image.}
+    various look-alike features. \quad Bottom: Arguably one of the most challenging cases. A small, low-contrast slick is missed by models in the center right of the image.}
     \label{figure3}
 \end{figure*}
 Fig. \ref{figure3} displays the segmentation results predicted from the top-performing model (Top-1). We compare predictions from the base and the fine-tuned
@@ -239,7 +239,7 @@ versions, showing how the model benefited from transfer learning accross differe
 with a tile size of 512, the most challenging format evaluated (Table \ref{table2}). In the first row, we see a typical arc-shaped slick in sea conditions allowing a clear SAR damping ratio. 
 Both the base and the fine-tuned model delineate the slick while correctly leaving out ocean eddies and a low-wind area on top of the image. The second row presents a common appearance 
 of natural slicks in SAR images, where several dark features may trigger false detections. Nonetheless, both models succesfully detect the two slicks and it seems transfer learning help reduce
-false positives, despite a somewhat undervalued Dice score. The bottom row examplifies one of the most challenging cases for SAR slick mapping. If two low-contrast slicks can be seen among lookalike features,
+false positives, despite a somewhat undervalued Dice score. The bottom row examplifies one of the most challenging cases for SAR slick mapping. If two low-contrast slicks can be seen among look-alike features,
 only the main one is detected by the fine-tuned model, illustrating the ongoing challenge of mapping under harsh observation conditions. 
 
 \section{Conclusion}

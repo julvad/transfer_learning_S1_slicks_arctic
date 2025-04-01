@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex manuscript"] 1743435345.19306 "manuscript.aux" "manuscript.bbl" "manuscript" 1743435351.54263 0
-  "./references.bib" 1743435325 85746 8a0a839cb80214ad9cfab0c1a5593186 ""
+["bibtex manuscript"] 1743440494.12591 "manuscript.aux" "manuscript.bbl" "manuscript" 1743440500.79591 0
+  "./references.bib" 1743439427 85746 8a0a839cb80214ad9cfab0c1a5593186 ""
   "c:/Users/juvad3723/texlive/2024/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1740166200 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "manuscript.aux" 1743435350 8541 9f3878ff9e6d9f6208ffb262d053cf9d "pdflatex"
+  "manuscript.aux" 1743440499 8543 367cdeba2ce23fab6efc6a8d9633c159 "pdflatex"
   (generated)
   "manuscript.bbl"
   "manuscript.blg"
   (rewritten before read)
-["pdflatex"] 1743435345.70951 "c:/Users/juvad3723/.1/--Projects/GitHub/transfer_learning_S1_slicks_arctic/latex/manuscript.tex" "manuscript.pdf" "manuscript" 1743435351.54334 0
+["pdflatex"] 1743440494.70836 "c:/Users/juvad3723/.1/--Projects/GitHub/transfer_learning_S1_slicks_arctic/latex/manuscript.tex" "manuscript.pdf" "manuscript" 1743440500.7966 0
   "IEEEtran.cls" 1732553293 288451 7379a03af5f3d0dad26db23a43c3a726 ""
-  "c:/Users/juvad3723/.1/--Projects/GitHub/transfer_learning_S1_slicks_arctic/latex/manuscript.tex" 1743435344 25545 e0870d0208aa753b8c716159b4991b47 ""
+  "c:/Users/juvad3723/.1/--Projects/GitHub/transfer_learning_S1_slicks_arctic/latex/manuscript.tex" 1743440487 25546 3531d56ce953f8c05b00bdb1b78e11f8 ""
   "c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1740165535 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1740165860 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr7t.tfm" 1740166092 2520 53e01eef820ca829e42c1333c3fd02b9 ""
@@ -149,10 +149,10 @@
   "figures/layout2_grids.png" 1743421910 3292334 52a3bae639b895394ae0ba02caf9a154 ""
   "figures/preds4x3_v2_scale.png" 1743418790 2667212 3d79ddc375c3f4727ee90d79044d6a66 ""
   "figures/samlora_dice_temp.png" 1742844679 147582 28f3ec984006df5c800c64f2f2c5e0d9 ""
-  "manuscript.aux" 1743435350 8541 9f3878ff9e6d9f6208ffb262d053cf9d "pdflatex"
-  "manuscript.bbl" 1743435345 12866 87a97e87be742b7a70b25ffa91685239 "bibtex manuscript"
-  "manuscript.out" 1743435350 747 4a0338a91b565ee38dbbf7c37a9e30a1 "pdflatex"
-  "manuscript.tex" 1743435344 25545 e0870d0208aa753b8c716159b4991b47 ""
+  "manuscript.aux" 1743440499 8543 367cdeba2ce23fab6efc6a8d9633c159 "pdflatex"
+  "manuscript.bbl" 1743440494 12866 87a97e87be742b7a70b25ffa91685239 "bibtex manuscript"
+  "manuscript.out" 1743440499 747 4a0338a91b565ee38dbbf7c37a9e30a1 "pdflatex"
+  "manuscript.tex" 1743440487 25546 3531d56ce953f8c05b00bdb1b78e11f8 ""
   (generated)
   "manuscript.aux"
   "manuscript.log"
