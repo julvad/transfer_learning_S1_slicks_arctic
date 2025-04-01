@@ -6,41 +6,29 @@ The associated article is currently in the writing stage.
 
 ---
 
-## Table of Contents
-1. [Overview](#overview)
-2. [Project Structure](#project-structure)
-3. [Data Sources](#data-sources)
-4. [License](#license)
-5. [Contact](#contact)
+## Contents
+1. [Abstract](#abstract)
+2. [Repo structure](#rep-structure)
+3. [Data](#data)
+4. [Contact](#contact)
 
 ---
 
-## Overview
-Natural seepage is a significant contributor to marine hydrocarbon inputs. Remote and intermittent seeps are
-difficult to monitor, yet oil slicks can be seen from spaceborne
-SAR images, creating potential for deep learning mapping
-methods. These methods, however, need a large amount of
-labeled images. To deal with data scarcity, transfer learning is an
-interesting approach which is commonly used in computer vision,
-yet still underutilized in remote sensing. One reason for this
-is difference in data acquisition. Differences between Sentinel-1 
-acquisition modes—such as the interferometric wide (IW) in
-the North Sea and extra-wide (EW) in the Arctic—complicate
-direct model transfer. Here, we present a use-case where transfer
-learning enhances the segmentation of natural oil slicks. We
-used labeled slicks in IW images in the North Sea to pretrain a
-series of DeepLabv3 and SAM models. These models were then
-fine-tuned on EW-labeled slicks from two documented Arctic
-seeps on which we have only limited observations. Our results
-show clear evidence that transfer learning improves few-shot
-segmentation, even in challenging images with slick lookalikes.
-Overall, few studied transfer learning between different SAR
-acquisition modes, and this work contributes to better monitoring
-poorly understood or yet undiscovered natural oil seeps.
+## Abstract
+Natural seepage is a significant contributor to marine hydrocarbon inputs. Remote and intermittent seeps are difficult to monitor in the field, yet oil slicks can be observed from spaceborne 
+    synthetic aperture radar (SAR) due to differences in their backscatter,
+    creating potential for automatic mapping. In mapping tasks such as segmentation, deep learning models excel, whilst needing large amounts of labeled images.
+    To deal with scarcity of labeled images, transfer learning is an approach 
+    commonly used in computer vision, yet still underutilized in remote sensing. In the case of oil slicks, differences between Sentinel-1 acquisition modes—such as the 
+    interferometric wide (IW) in the North Sea and extra-wide (EW) in the Arctic—complicate direct model transfer.
+    Here, we present a use-case where transfer learning enhances the segmentation of natural oil slicks. We used labeled slicks in IW images in the North Sea to pretrain a series of DeepLabv3 and SAM models. 
+    These models were then fine-tuned on EW-labeled slicks from two documented Arctic seeps on which we have only limited observations. Our results show clear evidence that transfer learning improves few-shot 
+    segmentation, even in challenging images with slick look-alikes. Overall, few studies have addressed transfer learning between SAR acquisition modes, and this work contributes to 
+    better monitoring poorly understood or yet undiscovered natural oil seeps. 
 
 ---
 
-## Project Structure
+## Repo structure
 ```plaintext
 main/
 ├── data/                     # Raw and processed data
@@ -83,12 +71,6 @@ The project used:
    - Sentralbanken High, Barents Sea (2015-2020) See https://doi.org/10.1038/s41467-023-37514-9
 
 **Note**: Raw data is not included in this repository due to size and licensing constraints.
-
----
-
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
