@@ -54,7 +54,6 @@ Malin Johansson is with the Department of Physics and Technology, The Arctic Uni
     To deal with scarcity of labeled images, transfer learning is an approach 
     commonly used in computer vision, yet still underutilized in remote sensing. In the case of oil slicks, differences between Sentinel-1 acquisition modes—such as the 
     interferometric wide (IW) in the North Sea and extra-wide (EW) in the Arctic—complicate direct model transfer.
-    % and limit the potential for transfer learning %% Does this contradict the point of the paper?
     Here, we present a use-case where transfer learning enhances the segmentation of natural oil slicks. We used labeled slicks in IW images in the North Sea to pretrain a series of DeepLabv3 and SAM models. 
     These models were then fine-tuned on EW-labeled slicks from two documented Arctic seeps on which we have only limited observations. Our results show clear evidence that transfer learning improves few-shot 
     segmentation, even in challenging images with slick look-alikes. Overall, few studies have addressed transfer learning between SAR acquisition modes, and this work contributes to 

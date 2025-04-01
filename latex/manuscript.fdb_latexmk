@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex manuscript"] 1743501528.35628 "manuscript.aux" "manuscript.bbl" "manuscript" 1743501534.86933 0
+["bibtex manuscript"] 1743501528.35628 "manuscript.aux" "manuscript.bbl" "manuscript" 1743506307.59962 0
   "./references.bib" 1743439427 85746 8a0a839cb80214ad9cfab0c1a5593186 ""
   "c:/Users/juvad3723/texlive/2024/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1740166200 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "manuscript.aux" 1743501533 8543 367cdeba2ce23fab6efc6a8d9633c159 "pdflatex"
+  "manuscript.aux" 1743506306 8543 367cdeba2ce23fab6efc6a8d9633c159 "pdflatex"
   (generated)
   "manuscript.bbl"
   "manuscript.blg"
   (rewritten before read)
-["pdflatex"] 1743501528.88423 "c:/Users/juvad3723/.1/--Projects/GitHub/transfer_learning_S1_slicks_arctic/latex/manuscript.tex" "manuscript.pdf" "manuscript" 1743501534.87101 0
+["pdflatex"] 1743506301.27686 "c:/Users/juvad3723/.1/--Projects/GitHub/transfer_learning_S1_slicks_arctic/latex/manuscript.tex" "manuscript.pdf" "manuscript" 1743506307.60011 0
   "IEEEtran.cls" 1732553293 288451 7379a03af5f3d0dad26db23a43c3a726 ""
-  "c:/Users/juvad3723/.1/--Projects/GitHub/transfer_learning_S1_slicks_arctic/latex/manuscript.tex" 1743501276 25548 c1f4c8d883f1b08a7317b1e0886d271e ""
+  "c:/Users/juvad3723/.1/--Projects/GitHub/transfer_learning_S1_slicks_arctic/latex/manuscript.tex" 1743506300 25447 04384cba0488b58de853e80a5a313be2 ""
   "c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1740165535 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1740165860 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvr7t.tfm" 1740166092 2520 53e01eef820ca829e42c1333c3fd02b9 ""
@@ -149,10 +149,10 @@
   "figures/layout2_grids.png" 1743501522 3211358 e8ce4540e0bcfa536d5003808c00af0f ""
   "figures/preds4x3_v2_scale.png" 1743418790 2667212 3d79ddc375c3f4727ee90d79044d6a66 ""
   "figures/samlora_dice_temp.png" 1743498660 150154 24be5ad8f79aaf0f8f664da4d248ccd9 ""
-  "manuscript.aux" 1743501533 8543 367cdeba2ce23fab6efc6a8d9633c159 "pdflatex"
+  "manuscript.aux" 1743506306 8543 367cdeba2ce23fab6efc6a8d9633c159 "pdflatex"
   "manuscript.bbl" 1743501528 12866 87a97e87be742b7a70b25ffa91685239 "bibtex manuscript"
-  "manuscript.out" 1743501533 747 4a0338a91b565ee38dbbf7c37a9e30a1 "pdflatex"
-  "manuscript.tex" 1743501276 25548 c1f4c8d883f1b08a7317b1e0886d271e ""
+  "manuscript.out" 1743506306 747 4a0338a91b565ee38dbbf7c37a9e30a1 "pdflatex"
+  "manuscript.tex" 1743506300 25447 04384cba0488b58de853e80a5a313be2 ""
   (generated)
   "manuscript.aux"
   "manuscript.log"

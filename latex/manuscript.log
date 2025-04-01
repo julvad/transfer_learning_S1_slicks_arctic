@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.21)  1 APR 2025 11:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.21)  1 APR 2025 13:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -496,7 +496,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 107.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 106.
 (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [1{c:/Users/juvad3723/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}
@@ -506,7 +506,7 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 <figures/layout2_grids.png, id=96, 867.24pt x 867.24pt>
 File: figures/layout2_grids.png Graphic file (type png)
 <use figures/layout2_grids.png>
-Package pdftex.def Info: figures/layout2_grids.png  used on input line 120.
+Package pdftex.def Info: figures/layout2_grids.png  used on input line 119.
 (pdftex.def)             Requested size: 238.49121pt x 238.48512pt.
 
 
@@ -516,16 +516,16 @@ Package pdftex.def Info: figures/layout2_grids.png  used on input line 120.
 <figures/deeplab_dice_temp.png, id=146, 509.7444pt x 271.0125pt>
 File: figures/deeplab_dice_temp.png Graphic file (type png)
 <use figures/deeplab_dice_temp.png>
-Package pdftex.def Info: figures/deeplab_dice_temp.png  used on input line 175.
+Package pdftex.def Info: figures/deeplab_dice_temp.png  used on input line 174.
 (pdftex.def)             Requested size: 229.81807pt x 122.18607pt.
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 175.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 174.
  (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
 <figures/samlora_dice_temp.png, id=148, 509.7444pt x 271.0125pt>
 File: figures/samlora_dice_temp.png Graphic file (type png)
 <use figures/samlora_dice_temp.png>
-Package pdftex.def Info: figures/samlora_dice_temp.png  used on input line 178.
+Package pdftex.def Info: figures/samlora_dice_temp.png  used on input line 177.
 (pdftex.def)             Requested size: 229.81807pt x 122.18607pt.
 
 
@@ -535,7 +535,7 @@ Package pdftex.def Info: figures/samlora_dice_temp.png  used on input line 178.
 <figures/preds4x3_v2_scale.png, id=191, 906.0249pt x 696.9237pt>
 File: figures/preds4x3_v2_scale.png Graphic file (type png)
 <use figures/preds4x3_v2_scale.png>
-Package pdftex.def Info: figures/preds4x3_v2_scale.png  used on input line 232.
+Package pdftex.def Info: figures/preds4x3_v2_scale.png  used on input line 231.
 (pdftex.def)             Requested size: 448.07378pt x 344.66458pt.
 
 
