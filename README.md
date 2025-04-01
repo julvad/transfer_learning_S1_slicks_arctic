@@ -6,16 +6,15 @@ The associated article is currently in the writing stage.
 
 ---
 
-## Table of Contents
-1. [Overview](#overview)
-2. [Project Structure](#project-structure)
-3. [Data Sources](#data-sources)
-4. [License](#license)
-5. [Contact](#contact)
+## Contents
+1. [Abstract](#abstract)
+2. [Repo structure](#rep-structure)
+3. [Data](#data)
+4. [Contact](#contact)
 
 ---
 
-## Overview
+## Abstract
 Natural seepage is a significant contributor to marine hydrocarbon inputs. Remote and intermittent seeps are
 difficult to monitor, yet oil slicks can be seen from spaceborne
 SAR images, creating potential for deep learning mapping
@@ -40,7 +39,7 @@ poorly understood or yet undiscovered natural oil seeps.
 
 ---
 
-## Project Structure
+## Repo structure
 ```plaintext
 main/
 ├── data/                     # Raw and processed data
@@ -83,12 +82,6 @@ The project used:
    - Sentralbanken High, Barents Sea (2015-2020) See https://doi.org/10.1038/s41467-023-37514-9
 
 **Note**: Raw data is not included in this repository due to size and licensing constraints.
-
----
-
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
