@@ -1,4 +1,4 @@
-\documentclass[journal]{IEEEtran}
+\documentclass[lettersize,journal]{IEEEtran}
 \usepackage{amsmath,amsfonts}
 \usepackage{algorithmic}
 \usepackage{algorithm}
@@ -13,8 +13,8 @@
 \usepackage{booktabs}
 \usepackage[hidelinks]{hyperref}
 
-\usepackage{xcolor}
-\usepackage{soul}
+% \usepackage{xcolor}
+% \usepackage{soul}
 
 \begin{document}
 
@@ -75,7 +75,7 @@ quigleyInvestigationDampingRatio2023}.
 
 Many previous works have attempted to make use of the damping ratio for automatizing marine oil detection, with varying results. They face a common challenge which has been an ongoing topic of research for over 
 three decades: the presence of oil slicks look-alikes including ocean eddies, biogenic slicks and newly-formed ice \cite{johanssonCanMineralOil2020,hovlandSlickDetectionSAR1994,alpersOilsSurfactants2004,
-alpersOilSpillDetection2017,espedalSatelliteDetectionNatural1996}. 
+alpersOilSpillDetection2017}. 
 When trained with a large number of labeled examples, deep learning models, currently the benchmark in computer vision, can capture complex shape- and texture-related features for image classification or 
 segmentation tasks \cite{goodfellowDeepLearning2016}. When trained with a limited sample size, however, these models struggle to extract more abstract, higher-level features
 \cite{bengioDeepLearningRepresentations2012}. The issue of limited data is exacerbated in the case of natural slicks mapping because of limited visibility. 
@@ -223,28 +223,29 @@ compares these methods, presenting the average Dice score accompanied by a 95\% 
 model performance, but its effect is the strongest—yet highly variable—when downsampling images to 25 m, meaning that we align the $\mathit{D}_S$ IW images with the $\mathit{D}_T$ EW images. 
 In a similar work, Bianchi et al. \cite{bianchiLargeScaleDetectionCategorization2020a} found that fine-tuning improved deep learning segmentation of oil spills. 
 In their case, however, they downsampled the resolution of training images to create a synthetic pretraining dataset.
-Moreover, the choice of tile size has no appearing effect on the effectiveness of transfer learning. This is a both interesting and surprising finding, because large geophysical processes such as oil slicks 
-often need to be split in smaller tiles for processing, typically resulting in loss of performance and slower computing.
+Moreover, tile size has no appearing effect on transfer learning. This is an interesting finding, because large geophysical processes such as oil slicks 
+often need to be split in smaller tiles for processing, typically resulting in performance loss and slower computing.
 
 \begin{figure*}[!t]
     \centering
-    \includegraphics[width=6.2in]{figures/preds4x3_v2_scale.png}
+    \includegraphics[width=6.02in]{figures/preds4x3_v2_scale_lettering.png}
     \caption{Top-1 model performance through examples. \quad Top row: An easier case, with some ocean eddies. \quad Middle: A more challenging example with 
     various look-alike features. \quad Bottom: Arguably one of the most challenging cases. A small, low-contrast slick is missed by models in the center right of the image.}
     \label{figure3}
 \end{figure*}
-Fig. \ref{figure3} displays the segmentation results predicted from the top-performing model (Top-1). We compare predictions from the base and the fine-tuned
-versions, showing how the model benefited from transfer learning accross different contexts. The examples are taken from the test set, with a 25-m resolution and predicting 
-with a tile size of 512, the most challenging format evaluated (Table \ref{table2}). In the first row, we see a typical arc-shaped slick in sea conditions allowing a clear SAR damping ratio. 
+Fig. \ref{figure3} displays the segmentation predictions from the top-performing model (Top-1). We compare predictions from the base (Fig. \ref{figure3}b) and the fine-tuned (Fig. \ref{figure3}c)
+versions, showing how the model benefited from transfer learning accross different examples. The examples are taken from the test set, with a 25-m resolution and predicting 
+with a tile width of 512 pixels, the most challenging format evaluated (Table \ref{table2}). First, we see a typical arc-shaped slick in sea conditions allowing a clear SAR damping ratio (top, Fig. \ref{figure3}a). 
 Both the base and the fine-tuned model delineate the slick while correctly leaving out ocean eddies and a low-wind area on top of the image. The second row presents a common appearance 
-of natural slicks in SAR images, where several dark features may trigger false detections. Nonetheless, both models succesfully detect the two slicks and it seems transfer learning help reduce
-false positives, despite a somewhat undervalued Dice score. The bottom row examplifies one of the most challenging cases for SAR slick mapping. If two low-contrast slicks can be seen among look-alike features,
-only the main one is detected by the fine-tuned model, illustrating the ongoing challenge of mapping under harsh observation conditions. 
+of natural slicks in a SAR image, where several dark features may trigger false detections (middle, Fig. \ref{figure3}a). Nonetheless, both models detect the two slicks (middle, Fig. \ref{figure3}d) and transfer learning 
+help reduce false detections, despite a somewhat undervalued Dice score (middle, Fig. \ref{figure3}c). The last row (Fig. \ref{figure3}a) examplifies one of the most challenging cases for SAR slick mapping. 
+If two low-contrast slicks can be seen among look-alike features, only the main slick (bottom, Fig. \ref{figure3}d) is detected by the fine-tuned model (bottom, Fig. \ref{figure3}c), 
+illustrating the challenge of harsh mapping conditions. 
 
 \section{Conclusion}
 Applications of transfer learning must be carefully evaluated, since in many cases its use can be inefficient, even detrimental if the contexts are too different \cite{mensinkFactorsInfluenceTransfer2022}.
-In this study, we made use of labeled slicks originating from a different area and imaged in a different SAR acquisition mode. 
-We show that transfer learning in the form of fine-tuning is effective for the few-shot SAR segmentation of natural oil slicks, improving model generalization and reducing overfitting 
+In this study, we made use of labeled slicks from a different area and imaged in a different SAR acquisition mode. 
+We show that transfer learning in the form of fine-tuning is effective for the few-shot SAR segmentation of natural oil slicks, improving model performance (average Dice increase of 0.03--0.13)
 despite accessing only a few examples in the target domain.
 
 Image processing to align SAR images is crucial to ensure transferable, high-level features between the source and the target domain—here interferometric-wide (IW) and extra-wide (EW) Sentinel-1 images.
@@ -256,7 +257,8 @@ with practical applications such as monitoring natural seepage in remote marine 
 \section*{Acknowledgments}
 Julien Vadnais received financial support from the Doctoral Research Scholarship of the Fonds de recherche du Québec. 
 The authors would like to thank the EU Copernicus programme for allowing open access to the Sentinel-1 archives.
+This research was carried out as part of the InFluSe project (Research Council of Norway Project 353044).
 \bibliographystyle{IEEEtran}
-\bibliography{references}
+\bibliography{references.bib}
 
 \end{document}
