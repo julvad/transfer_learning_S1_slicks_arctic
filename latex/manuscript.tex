@@ -12,6 +12,7 @@
 \usepackage{cite}
 \usepackage{booktabs}
 \usepackage[hidelinks]{hyperref}
+\usepackage[switch]{lineno}
 
 % \usepackage{xcolor}
 % \usepackage{soul}
@@ -47,6 +48,7 @@ Malin Johansson is with the Department of Physics and Technology, The Arctic Uni
 
 \maketitle
 
+\linenumbers
 \begin{abstract} 
     Natural seepage is a significant contributor to marine hydrocarbon inputs. Remote and intermittent seeps are difficult to monitor in the field, yet oil slicks can be observed from spaceborne 
     synthetic aperture radar (SAR) due to differences in their backscatter,
@@ -60,9 +62,11 @@ Malin Johansson is with the Department of Physics and Technology, The Arctic Uni
     better monitoring poorly understood or yet undiscovered natural oil seeps. 
 \end{abstract}
 
+\nolinenumbers
 \begin{IEEEkeywords}
     Natural seepage, oil slicks, SAR, deep learning, transfer learning, segmentation, DeepLab, SAM.
 \end{IEEEkeywords}
+\linenumbers
 
 \section{Introduction}
 \IEEEPARstart{N}{atural} seepage is a significant contributor of oil entering marine environments \cite{kvenvoldenNaturalSeepageCrude2003}, yet the data required to update quantitative
@@ -254,6 +258,7 @@ The analysis was validated using two documented seeps in the Arctic, where furth
 Overall, our findings highlight the potential of transfer learning. This approach remains underutilized in remote sensing, yet it is promising for addressing data scarcity, 
 with practical applications such as monitoring natural seepage in remote marine environments. 
 
+\nolinenumbers
 \section*{Acknowledgments}
 Julien Vadnais received financial support from the Doctoral Research Scholarship of the Fonds de recherche du Québec. 
 The authors would like to thank the EU Copernicus programme for allowing open access to the Sentinel-1 archives.
