@@ -13,15 +13,23 @@
 \usepackage{booktabs}
 \usepackage[hidelinks]{hyperref}
 \usepackage[switch]{lineno}
+\usepackage{orcidlink}
+\usepackage{xcolor}
 
-% \usepackage{xcolor}
+% ORCID macro
+\newcommand{\orcid}[1]{\href{https://orcid.org/#1}{\textcolor[HTML]{A6CE39}{\aiOrcid}}}
 % \usepackage{soul}
 
 \begin{document}
 
 \title{Transfer learning between Sentinel-1 acquisition modes enhances \\ the few-shot segmentation of natural oil slicks in the Arctic}
 
-\author{Julien Vadnais,~\IEEEmembership{Graduate Student Member,~IEEE, }Benjamin Aubrey Robson, Christian Haug Eide, Rune Mattingsdal, Malin Johansson
+\author{
+    Julien Vadnais\orcidlink{0009-0003-2680-8841},~\IEEEmembership{Graduate Student Member,~IEEE}, 
+    Benjamin Aubrey Robson\orcidlink{0000-0002-4987-7378}, 
+    Christian Haug Eide\orcidlink{0000-0003-4949-9917}, \\
+    Rune Mattingsdal\orcidlink{0000-0003-0168-2405}, 
+    Malin Johansson\orcidlink{0000-0003-0129-2239},~\IEEEmembership{Member,~IEEE} 
         % <-this % stops a space
 \thanks{Manuscript received March 31, 2025. This research was carried out in the context of the InFluSe project (Research Council of Norway Project 353044).}
 
