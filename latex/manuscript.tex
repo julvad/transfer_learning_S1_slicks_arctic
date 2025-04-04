@@ -65,7 +65,7 @@ Malin Johansson is with the Department of Physics and Technology, UiT The Arctic
     differences between Sentinel-1 acquisition modes, such as the interferometric wide (IW) in the North Sea and extra wide (EW) in the Arctic, complicate direct model transfer.
     Here, we present a use-case where transfer learning enhances the segmentation of natural oil slicks. We used labeled slicks in IW images in the North Sea to pretrain a series of DeepLabv3 and SAM models. 
     These models were then fine-tuned on EW-labeled slicks from two documented Arctic seeps on which we have only limited observations. Our results show clear evidence that transfer learning improves few-shot 
-    segmentation, notably in challenging images. Overall, few studies have addressed transfer learning between SAR acquisition modes. This work contributes to improved monitoring of poorly 
+    segmentation, notably in challenging and noisy images. Overall, few studies have addressed transfer learning between SAR acquisition modes. This work contributes to improved monitoring of poorly 
     understood or yet undiscovered hydrocarbon seeps. 
 \end{abstract}
 
@@ -86,7 +86,7 @@ Previous works have attempted to make use of the damping ratio for automatizing 
 the presence of oil look-alikes including ocean eddies, biogenic slicks and newly-formed ice \cite{johanssonCanMineralOil2020,hovlandSlickDetectionSAR1994,alpersOilsSurfactants2004,alpersOilSpillDetection2017}. 
 When trained with a large number of labeled examples, deep learning models, currently the benchmark in computer vision, can capture complex shape- and texture-related features for image classification or segmentation tasks 
 \cite{goodfellowDeepLearning2016}. When trained with a limited sample size, however, these models struggle to extract more abstract, higher-level features
-\cite{bengioDeepLearningRepresentations2012}. The issue of limited data is exacerbated in the case of natural slicks because of limited visibility. Not only will slicks only last a few hours on the surface 
+\cite{bengioDeepLearningRepresentations2012}. The issue of limited data is exacerbated in the case of oil slicks because of limited visibility. Not only will slicks only last a few hours on the surface 
 \cite{jatiaultMonitoringNaturalOil2017,daneshgaraslHindcastModelingOil2017,oreillyDistributionMagnitudeVariability2022}, their visibility also depend on a specific window of surface wind conditions, outside of which the sea 
 either has too many or too few capillary waves for a discriminative damping ratio \cite{quigleyInvestigationDampingRatio2023,sausDetectionDelineationProduced2021,gadeImagingBiogenicAnthropogenic1998}. 
 \IEEEpubidadjcol  
@@ -116,10 +116,10 @@ First, \cite{panieriArcticNaturalOil2024} investigated an intermittent seeping p
 in 70 images taken between 2015 and 2024. Second, \cite{serovWidespreadNaturalMethane2023,ivanovSearchDetectionNatural2020} found extensive evidence of a wide seepage area in the Barents Sea (31.33-32.37°E, 75.15°N-75.35°N). 
 This area is part of Sentralbanken high, a geological structure with prospective hydrocarbon potential, although it remains largely unexplored \cite{lundschienNorthBarentsComposite2025}. 
 There, we delineated 250 slicks in 88 images taken between 2015 and 2020. At these two locations, labeled samples from the horizontal co-polarization (HH) band of Sentinel-1 EW images constitute the 
-$\mathit{D}_T$ (Fig.\,\ref{figure1}a, \ref{figure1}b). At lower latitudes, various kinds of oil slicks can be observed in the North Sea, a hydrocarbon-rich and seepage-active region \cite{hovlandChapter2Focus1988}. 
-With the same procedure, we delineated over 1700 slicks, this time using the vertical co-polarization (VV) band of 463 Sentinel-1 IW images. Labeled samples in the North Sea constitute the $\mathit{D}_S$ (Fig.\,\ref{figure1}c). 
+$\mathit{D}_T$ (Fig. \ref{figure1}a, \ref{figure1}b). At lower latitudes, various kinds of oil slicks can be observed in the North Sea, a hydrocarbon-rich and seepage-active region \cite{hovlandChapter2Focus1988}. 
+With the same procedure, we delineated over 1700 slicks, this time using the vertical co-polarization (VV) band of 463 Sentinel-1 IW images. Labeled samples in the North Sea constitute the $\mathit{D}_S$ (Fig. \ref{figure1}c). 
 In this study, only the co-polarization bands were used because of their oil-discrimination capacity \cite{kudryavtsevDualCoPolarizedSAR2013,johanssonMultifrequencyPolarimetricSAR2017,brekkeSAROilSpill2020}. 
-Since slicks can be split into segments, we give slick numbers in Table\,\ref{table1} as approximations only.
+Since slicks can be split into segments, we give slick numbers in Table \ref{table1} as approximations only.
 \begin{figure}[!t]
     \centering
     \includegraphics[width=3.3in]{figures/layout2_grids.png} %3.3=left 3.5=right
@@ -158,7 +158,7 @@ Here, we applied a linear stretch of two standard deviations on clipped tiles, n
 in which \( X' \) is the new value of image pixels \( X \), using the mean \( \mu \) and the standard deviation \( \sigma \) of the image.
 
 \subsection{Methods}
-We pretrained two deep learning models: DeepLabv3 and the Segment Anything Model (SAM). DeepLabv3 is a convolutional neural network architecture for semantic segmentation which uses atrous convolutions 
+We pretrained two deep learning models: DeepLabv3 and the Segment Anything Model (SAM). DeepLabv3 is a convolutional neural network architecture for semantic segmentation, which uses atrous convolutions 
 and introduced atrous spatial pooling layers \cite{chenDeepLabSemanticImage2018}. It is considered state-of-the-art in many fields of application including remote sensing \cite{tuiaDeepLearningbasedSemantic2021}. 
 SAM is a novel zero-shot learning vision transformer for image segmentation \cite{kirillovSegmentAnything2023}. While SAM itself does not assign classes, the SamLoRA variation extends its use by adding trainable 
 classification layers to SAM's mask encoder \cite{esriFinetuneSegmentAnything2025}. Data augmentation was generated in the form of a 30° rotation, brightness and contrast shifts, soft zooms, and croppings. 
@@ -198,7 +198,7 @@ considering only the oil slick class to ignore the trivial classification of wat
 \begin{align}
     \text{Dice} = \frac{2 \cdot TP}{2 \cdot TP + FP + FN}
 \end{align}
-Bootstrapped testing helps assess model consistency with small and high-variance test sets \cite{mollersenAccountingMultiplicityMachine2024}. In Fig.\,\ref{figure2} and Table\,\ref{table2},
+Bootstrapped testing helps assess model consistency with small and high-variance test sets \cite{mollersenAccountingMultiplicityMachine2024}. In Fig. \ref{figure2} and Table \ref{table2},
 we provide a 95\% statistical interval for the test-set Dice score, following the bootstrapping method described in
 \cite{burkovMachineLearningEngineering2020}.
 
@@ -206,7 +206,7 @@ we provide a 95\% statistical interval for the test-set Dice score, following th
 Fig. \ref{figure2} illustrates the change in Dice score as the number of training images increases. We show clear evidence that both the convolutional neural network (Fig. \ref{fig2-1}) 
 and the vision transformer (Fig. \ref{fig2-2}) benefit from transfer learning. This result is more evident in the case of DeepLabv3, in which $\mathit{D}_S$ pretraining increased the Dice score at all values of \( N \).
 While SamLoRA also benefits, the effect is rapidly reduced as the number of training samples grow, and its effect is indistinguishable with values of \( N > 8 \). Despite this, transfer learning has an overall positive effect, 
-particularly with fewer training images. Until \( N > 8 \), SamLoRA outperforms DeepLabv3. This is consistent with larger models being more efficient at fine-tuning on small number of samples \cite{zhaiScalingVisionTransformers2022}. 
+particularly with fewer training images. Until \( N > 8 \), SamLoRA outperforms DeepLabv3. This is consistent with larger models being more efficient at fine-tuning on a small number of samples \cite{zhaiScalingVisionTransformers2022}. 
 DeepLabv3's Dice scores grow steadily with an increasing number of training images, and we can expect this trend to continue beyond the limits of our sample size (Fig. \ref{fig2-1}). In contrast, it remains unclear whether SamLoRA 
 would benefit from transfer learning with larger training datasets (Fig. \ref{fig2-2}).
 \begin{table}[t]
@@ -222,7 +222,7 @@ would benefit from transfer learning with larger training datasets (Fig. \ref{fi
     \end{tabular}
 \end{table}
 
-After comparing model architectures, we investigated the effect of transfer learning depending on the resampling method used to geographically align images from two Sentinel-1 acquisition modes. Table\,\ref{table2} 
+After comparing model architectures, we investigated the effect of transfer learning depending on the resampling method used to geographically align images from two Sentinel-1 acquisition modes. Table \ref{table2} 
 compares these methods, presenting the average Dice score accompanied by a 95\% statistical interval for the change in Dice resulting from transfer learning. In most cases, transfer learning improves model performance, 
 but its effect is strongest—yet highly variable—when downsampling images to 25\,m, meaning that we align the $\mathit{D}_S$ IW images with the $\mathit{D}_T$ EW images. Similar work by 
 \cite{bianchiLargeScaleDetectionCategorization2020a} found that fine-tuning improved deep learning segmentation of oil spills. In that study, however, the researchers downsampled the resolution of training images to create a 
@@ -237,12 +237,12 @@ typically results in performance loss and slower computing.
     various look-alike features. \quad Bottom: Arguably one of the most challenging cases. A small, low-contrast slick is missed by models in the center right of the image.}
     \label{figure3}
 \end{figure*}
-Fig.\,\ref{figure3} displays the segmentation predictions from the top-performing model (Top-1). We compare predictions from the base (Fig.\,\ref{figure3}b) and the fine-tuned (Fig.\,\ref{figure3}c)
+Fig. \ref{figure3} displays the segmentation predictions from the top-performing model (Top-1). We compare predictions from the base (Fig. \ref{figure3}b) and the fine-tuned (Fig. \ref{figure3}c)
 versions, showing how the model benefited from transfer learning across different examples. The examples are taken from the test set, with a 25\,m resolution and predicting 
-with a tile width of 512 pixels, the most challenging format evaluated (Table\,\ref{table2}). First, we see a typical arc-shaped slick with a clear SAR damping ratio (top, Fig.\,\ref{figure3}a). 
-Both the base and the fine-tuned model delineate the slick while correctly leaving out ocean eddies and a low-wind area on top of the image. The second row presents a common appearance of natural slicks in an SAR image, 
+with a tile width of 512 pixels, the most challenging format evaluated (Table \ref{table2}). First, we see a typical arc-shaped slick with a clear SAR damping ratio (top, Fig. \ref{figure3}a). 
+Both the base and the fine-tuned model delineate the slick, while correctly leaving out ocean eddies and a low-wind area on top of the image. The second row presents a common appearance of natural slicks in an SAR image, 
 where several dark features may trigger false detections (middle, Fig. \ref{figure3}a). Nonetheless, both models detect the two slicks (middle, Fig. \ref{figure3}d) and transfer learning 
-help reduce false detections, despite a somewhat undervalued Dice score (middle, Fig.\,\ref{figure3}c). The last row (bottom, Fig.\,\ref{figure3}a) exemplifies one of the most challenging cases for SAR slick mapping. 
+help reduce false detections, despite a somewhat undervalued Dice score (middle, Fig. \ref{figure3}c). The last row (bottom, Fig. \ref{figure3}a) exemplifies one of the most challenging cases for SAR slick mapping. 
 If two low-contrast slicks can be seen among look-alike features, only the main slick (bottom, Fig. \ref{figure3}d) is detected by the fine-tuned model (bottom, Fig. \ref{figure3}c), illustrating the challenge of 
 harsh mapping conditions. 
 
@@ -251,8 +251,8 @@ Applications of transfer learning must be carefully evaluated. In many cases, it
 In this study, we made use of labeled slicks from a different area and imaged in a different SAR acquisition mode. We show that transfer learning in the form of fine-tuning is effective for the few-shot SAR segmentation
 of natural oil slicks, improving model performance (average Dice increase of 0.03--0.13) despite accessing only a few examples in the target domain.
 
-Transferability between IW and EW modes is especially important in the northern, where the absence of large spills--which oil segmentation models typically rely on for training data-- 
-limits the availability of training data. In contrast, seeps in the region emit slicks that are typically thin, with low oil concentrations and reduced backscatter damping.
+Transferability between IW and EW modes is especially important in the Arctic, where the absence of large spills--which oil segmentation models typically rely on for training-- 
+limits the availability of training data. In contrast, Arctic seeps emit slicks that are typically thin, with low oil concentrations and reduced backscatter damping.
 This poses a challenge for detection, which partly explains why these remote seeps are still under-investigated today. Our results show that both deep learning models benefited from transferring pretrained model weights, 
 with DeepLabv3 performing best overall, though SAM achieved top accuracy with fewer training images. Our method, validated on two documented seepage sites, offers promising perspectives for
 identifying and studying additional, as yet undiscovered remote seeps.
