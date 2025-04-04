@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.21)  4 APR 2025 16:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.21)  4 APR 2025 21:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -386,32 +386,14 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
 \Hy@SectionHShift=\skip64
-) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/lineno/lineno.sty
-Package: lineno 2025/01/29 line numbers on paragraphs v5.4
-\linenopenalty=\count320
-\output=\toks30
-\linenoprevgraf=\count321
-\linenumbersep=\dimen260
-\linenumberwidth=\dimen261
-\c@linenumber=\count322
-\c@pagewiselinenumber=\count323
-\c@LN@truepage=\count324
-\c@internallinenumber=\count325
-\c@internallinenumbers=\count326
-\quotelinenumbersep=\dimen262
-\bframerule=\dimen263
-\bframesep=\dimen264
-\bframebox=\box60
-\@LN@amsmath@ams@eqpen=\count327
-LaTeX Info: Redefining \\ on input line 3187.
 ) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/orcidlink/orcidlink.sty
 Package: orcidlink 2024/06/26 v1.1.0 Support ORCID's three different ID formats.
  (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks31
-\pgfutil@tempdima=\dimen265
-\pgfutil@tempdimb=\dimen266
+\pgfutil@everybye=\toks30
+\pgfutil@tempdima=\dimen260
+\pgfutil@tempdimb=\dimen261
 ) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box61
+\pgfutil@abb=\box60
 ) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/pgf.revision.tex)
 Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 ))
@@ -419,31 +401,31 @@ Package: pgf 2023-01-15 v3.1.10 (3.1.10)
  (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
  (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks32
-\pgfkeys@temptoks=\toks33
+\pgfkeys@pathtoks=\toks31
+\pgfkeys@temptoks=\toks32
  (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks34
+\pgfkeys@tmptoks=\toks33
 ))
-\pgf@x=\dimen267
-\pgf@y=\dimen268
-\pgf@xa=\dimen269
-\pgf@ya=\dimen270
-\pgf@xb=\dimen271
-\pgf@yb=\dimen272
-\pgf@xc=\dimen273
-\pgf@yc=\dimen274
-\pgf@xd=\dimen275
-\pgf@yd=\dimen276
+\pgf@x=\dimen262
+\pgf@y=\dimen263
+\pgf@xa=\dimen264
+\pgf@ya=\dimen265
+\pgf@xb=\dimen266
+\pgf@yb=\dimen267
+\pgf@xc=\dimen268
+\pgf@yc=\dimen269
+\pgf@xd=\dimen270
+\pgf@yd=\dimen271
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count328
-\c@pgf@countb=\count329
-\c@pgf@countc=\count330
-\c@pgf@countd=\count331
-\t@pgf@toka=\toks35
-\t@pgf@tokb=\toks36
-\t@pgf@tokc=\toks37
-\pgf@sys@id@count=\count332
+\c@pgf@counta=\count320
+\c@pgf@countb=\count321
+\c@pgf@countc=\count322
+\c@pgf@countd=\count323
+\t@pgf@toka=\toks34
+\t@pgf@tokb=\toks35
+\t@pgf@tokc=\toks36
+\pgf@sys@id@count=\count324
  (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
@@ -454,8 +436,8 @@ File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 ))) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count333
-\pgfsyssoftpath@bigbuffer@items=\count334
+\pgfsyssoftpath@smallbuffer@items=\count325
+\pgfsyssoftpath@bigbuffer@items=\count326
 ) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/xcolor/xcolor.sty
@@ -477,52 +459,52 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 ) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
  (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen277
-\pgfmath@count=\count335
-\pgfmath@box=\box62
-\pgfmath@toks=\toks38
-\pgfmath@stack@operand=\toks39
-\pgfmath@stack@operation=\toks40
+\pgfmath@dimen=\dimen272
+\pgfmath@count=\count327
+\pgfmath@box=\box61
+\pgfmath@toks=\toks37
+\pgfmath@stack@operand=\toks38
+\pgfmath@stack@operation=\toks39
 ) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count336
+\c@pgfmathroundto@lastzeros=\count328
 )) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen278
-\pgf@picmaxx=\dimen279
-\pgf@picminy=\dimen280
-\pgf@picmaxy=\dimen281
-\pgf@pathminx=\dimen282
-\pgf@pathmaxx=\dimen283
-\pgf@pathminy=\dimen284
-\pgf@pathmaxy=\dimen285
-\pgf@xx=\dimen286
-\pgf@xy=\dimen287
-\pgf@yx=\dimen288
-\pgf@yy=\dimen289
-\pgf@zx=\dimen290
-\pgf@zy=\dimen291
+\pgf@picminx=\dimen273
+\pgf@picmaxx=\dimen274
+\pgf@picminy=\dimen275
+\pgf@picmaxy=\dimen276
+\pgf@pathminx=\dimen277
+\pgf@pathmaxx=\dimen278
+\pgf@pathminy=\dimen279
+\pgf@pathmaxy=\dimen280
+\pgf@xx=\dimen281
+\pgf@xy=\dimen282
+\pgf@yx=\dimen283
+\pgf@yy=\dimen284
+\pgf@zx=\dimen285
+\pgf@zy=\dimen286
 ) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen292
-\pgf@path@lasty=\dimen293
+\pgf@path@lastx=\dimen287
+\pgf@path@lasty=\dimen288
 ) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen294
-\pgf@shorten@start@additional=\dimen295
+\pgf@shorten@end@additional=\dimen289
+\pgf@shorten@start@additional=\dimen290
 ) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfpic=\box63
-\pgf@hbox=\box64
-\pgf@layerbox@main=\box65
-\pgf@picture@serial@count=\count337
+\pgfpic=\box62
+\pgf@hbox=\box63
+\pgf@layerbox@main=\box64
+\pgf@picture@serial@count=\count329
 ) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen296
+\pgflinewidth=\dimen291
 ) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen297
-\pgf@pt@y=\dimen298
-\pgf@pt@temp=\dimen299
+\pgf@pt@x=\dimen292
+\pgf@pt@y=\dimen293
+\pgf@pt@temp=\dimen294
 ) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
@@ -531,17 +513,17 @@ File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen300
+\pgfarrowsep=\dimen295
 ) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen301
-\pgf@sys@shading@range@num=\count338
-\pgf@shadingcount=\count339
+\pgf@max=\dimen296
+\pgf@sys@shading@range@num=\count330
+\pgf@shadingcount=\count331
 ) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfexternal@startupbox=\box66
+\pgfexternal@startupbox=\box65
 ) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
@@ -552,51 +534,51 @@ File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodeparttextbox=\box67
+\pgfnodeparttextbox=\box66
 ) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen302
-\pgf@nodesepend=\dimen303
+\pgf@nodesepstart=\dimen297
+\pgf@nodesepend=\dimen298
 ) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
 )) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen304
-\pgffor@skip=\dimen305
-\pgffor@stack=\toks41
-\pgffor@toks=\toks42
+\pgffor@iter=\dimen299
+\pgffor@skip=\dimen300
+\pgffor@stack=\toks40
+\pgffor@toks=\toks41
 )) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
  (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count340
-\pgfplotmarksize=\dimen306
+\pgf@plot@mark@count=\count332
+\pgfplotmarksize=\dimen301
 )
-\tikz@lastx=\dimen307
-\tikz@lasty=\dimen308
-\tikz@lastxsaved=\dimen309
-\tikz@lastysaved=\dimen310
-\tikz@lastmovetox=\dimen311
-\tikz@lastmovetoy=\dimen312
-\tikzleveldistance=\dimen313
-\tikzsiblingdistance=\dimen314
-\tikz@figbox=\box68
-\tikz@figbox@bg=\box69
-\tikz@tempbox=\box70
-\tikz@tempbox@bg=\box71
-\tikztreelevel=\count341
-\tikznumberofchildren=\count342
-\tikznumberofcurrentchild=\count343
-\tikz@fig@count=\count344
+\tikz@lastx=\dimen302
+\tikz@lasty=\dimen303
+\tikz@lastxsaved=\dimen304
+\tikz@lastysaved=\dimen305
+\tikz@lastmovetox=\dimen306
+\tikz@lastmovetoy=\dimen307
+\tikzleveldistance=\dimen308
+\tikzsiblingdistance=\dimen309
+\tikz@figbox=\box67
+\tikz@figbox@bg=\box68
+\tikz@tempbox=\box69
+\tikz@tempbox@bg=\box70
+\tikztreelevel=\count333
+\tikznumberofchildren=\count334
+\tikznumberofcurrentchild=\count335
+\tikz@fig@count=\count336
  (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count345
-\pgfmatrixcurrentcolumn=\count346
-\pgf@matrix@numberofcolumns=\count347
+\pgfmatrixcurrentrow=\count337
+\pgfmatrixcurrentcolumn=\count338
+\pgf@matrix@numberofcolumns=\count339
 )
-\tikz@expandcount=\count348
+\tikz@expandcount=\count340
 
 (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
@@ -606,16 +588,34 @@ File: tikzlibrarysvg.path.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: pgflibrarysvg.path.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduleparser.code.tex
 File: pgfmoduleparser.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfparserdef@arg@count=\count349
+\pgfparserdef@arg@count=\count341
 )
-\pgf@lib@svg@last@x=\dimen315
-\pgf@lib@svg@last@y=\dimen316
-\pgf@lib@svg@last@c@x=\dimen317
-\pgf@lib@svg@last@c@y=\dimen318
-\pgf@lib@svg@count=\count350
-\pgf@lib@svg@max@num=\count351
+\pgf@lib@svg@last@x=\dimen310
+\pgf@lib@svg@last@y=\dimen311
+\pgf@lib@svg@last@c@x=\dimen312
+\pgf@lib@svg@last@c@y=\dimen313
+\pgf@lib@svg@count=\count342
+\pgf@lib@svg@max@num=\count343
 ))
 \@curXheight=\skip65
+) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2025/01/29 line numbers on paragraphs v5.4
+\linenopenalty=\count344
+\output=\toks42
+\linenoprevgraf=\count345
+\linenumbersep=\dimen314
+\linenumberwidth=\dimen315
+\c@linenumber=\count346
+\c@pagewiselinenumber=\count347
+\c@LN@truepage=\count348
+\c@internallinenumber=\count349
+\c@internallinenumbers=\count350
+\quotelinenumbersep=\dimen316
+\bframerule=\dimen317
+\bframesep=\dimen318
+\bframebox=\box71
+\@LN@amsmath@ams@eqpen=\count351
+LaTeX Info: Redefining \\ on input line 3187.
 ) (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count352
@@ -675,11 +675,11 @@ Package hyperref Info: Link coloring OFF on input line 21.
 \@outlinefile=\write4
 \openout4 = `manuscript.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 56.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 57.
  (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 56.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 57.
  (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -693,48 +693,51 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 111.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 110.
 (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [1{c:/Users/juvad3723/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
 
 ]
-<figures/layout2_grids.png, id=115, 867.24pt x 867.24pt>
+<figures/layout2_grids.png, id=114, 867.24pt x 867.24pt>
 File: figures/layout2_grids.png Graphic file (type png)
 <use figures/layout2_grids.png>
-Package pdftex.def Info: figures/layout2_grids.png  used on input line 130.
+Package pdftex.def Info: figures/layout2_grids.png  used on input line 128.
 (pdftex.def)             Requested size: 238.49121pt x 238.48512pt.
 
 
 
 
 [2 <./figures/layout2_grids.png>]
-<figures/deeplab_dice_temp.png, id=165, 509.7444pt x 271.0125pt>
+<figures/deeplab_dice_temp.png, id=164, 509.7444pt x 271.0125pt>
 File: figures/deeplab_dice_temp.png Graphic file (type png)
 <use figures/deeplab_dice_temp.png>
-Package pdftex.def Info: figures/deeplab_dice_temp.png  used on input line 185.
+Package pdftex.def Info: figures/deeplab_dice_temp.png  used on input line 182.
 (pdftex.def)             Requested size: 229.81807pt x 122.18607pt.
-<figures/samlora_dice_temp.png, id=167, 509.7444pt x 271.0125pt>
+<figures/samlora_dice_temp.png, id=166, 509.7444pt x 271.0125pt>
 File: figures/samlora_dice_temp.png Graphic file (type png)
 <use figures/samlora_dice_temp.png>
-Package pdftex.def Info: figures/samlora_dice_temp.png  used on input line 188.
+Package pdftex.def Info: figures/samlora_dice_temp.png  used on input line 185.
 (pdftex.def)             Requested size: 229.81807pt x 122.18607pt.
 
 
 
 
 [3 <./figures/deeplab_dice_temp.png> <./figures/samlora_dice_temp.png>]
-<figures/preds4x3_v2_scale_lettering.png, id=209, 906.0249pt x 719.3274pt>
+<figures/preds4x3_v2_scale_lettering.png, id=208, 906.0249pt x 719.3274pt>
 File: figures/preds4x3_v2_scale_lettering.png Graphic file (type png)
 <use figures/preds4x3_v2_scale_lettering.png>
-Package pdftex.def Info: figures/preds4x3_v2_scale_lettering.png  used on input line 242.
+Package pdftex.def Info: figures/preds4x3_v2_scale_lettering.png  used on input line 238.
 (pdftex.def)             Requested size: 435.0657pt x 345.41591pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-(./manuscript.bbl
 
-[4 <./figures/preds4x3_v2_scale_lettering.png>]
+
+
+
+[4 <./figures/preds4x3_v2_scale_lettering.png>] (./manuscript.bbl
 
 
 Underfull \hbox (badness 5460) in paragraph at lines 117--118
@@ -749,21 +752,21 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `manuscript.out' has not changed.
-(rerunfilecheck)             Checksum: 4A0338A91B565EE38DBBF7C37A9E30A1;747.
+(rerunfilecheck)             Checksum: A667137AB4B7C864FEBB08FB83A3E83F;747.
  ) 
 Here is how much of TeX's memory you used:
- 23097 strings out of 473201
- 441570 string characters out of 5711963
- 848179 words of memory out of 5000000
- 45871 multiletter control sequences out of 15000+600000
+ 23100 strings out of 473201
+ 441590 string characters out of 5711963
+ 854158 words of memory out of 5000000
+ 45874 multiletter control sequences out of 15000+600000
  607277 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,12n,105p,574b,811s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on manuscript.pdf (5 pages, 7203714 bytes).
+Output written on manuscript.pdf (5 pages, 7204226 bytes).
 PDF statistics:
- 337 PDF objects out of 1000 (max. 8388607)
- 270 compressed objects within 3 object streams
+ 336 PDF objects out of 1000 (max. 8388607)
+ 269 compressed objects within 3 object streams
  69 named destinations out of 1000 (max. 500000)
  89 words of extra memory for PDF output out of 10000 (max. 10000000)
 
