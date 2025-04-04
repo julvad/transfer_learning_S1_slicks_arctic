@@ -29,7 +29,7 @@
     Rune Mattingsdal\orcidlink{0000-0003-0168-2405}, 
     Malin Johansson\orcidlink{0000-0003-0129-2239},~\IEEEmembership{Member,~IEEE} 
         % <-this % stops a space
-\thanks{Manuscript received March 31, 2025. This research was carried out in the context of the InFluSe project (Research Council of Norway Project 353044).}
+\thanks{Manuscript received March 4, 2025. This research was carried out in the context of the InFluSe project (Research Council of Norway Project 353044).}
 
 % grouped affiliations
 \thanks{Julien Vadnais, Benjamin Aubrey Robson, and Christian Haug Eide are with the Department of Earth Science, University of Bergen, 5020 Bergen, Norway.
@@ -47,14 +47,15 @@ Malin Johansson is with the Department of Physics and Technology, UiT The Arctic
 }
 
 % The paper headers
-\markboth{\LaTeX\ PDF, IEEE GEOSCIENCE AND REMOTE SENSING LETTERS,~Vol.~14, No.~8, March~2025}%
+\markboth{\LaTeX\ PDF, IEEE GEOSCIENCE AND REMOTE SENSING LETTERS,~Vol.~XX, No.~Y, <Month>~2025}%
 {Shell \MakeLowercase{\textit{et al.}}: A Sample Article Using IEEEtran.cls for IEEE Journals}
 
 \IEEEpubid{\copyright This work is licensed under CC BY 4.0.}
 % Remember, if you use this you must call \IEEEpubidadjcol in the second column for its text to clear the IEEEpubid mark.
 
 \maketitle
-\linenumbers
+
+% \linenumbers %% Uncomment to activate line numbering
 \begin{abstract} 
     Natural seepage is a significant contributor to marine hydrocarbon inputs. 
     Remote and intermittent seeps are difficult to monitor in the field, yet oil slicks can be observed by spaceborne synthetic aperture radar (SAR) because they reduce backscatter, 
@@ -68,13 +69,9 @@ Malin Johansson is with the Department of Physics and Technology, UiT The Arctic
     understood or yet undiscovered hydrocarbon seeps. 
 \end{abstract}
 
-\nolinenumbers
 \begin{IEEEkeywords}
     Natural seepage, oil slicks, SAR, deep learning, transfer learning, segmentation, DeepLab, SAM
 \end{IEEEkeywords}
-
-% Line numbering for review only
-\linenumbers
 
 \section{Introduction}
 \IEEEPARstart{N}{atural} seepage is a significant contributor of oil entering marine environments \cite{kvenvoldenNaturalSeepageCrude2003}, yet the data required to update quantitative
@@ -260,14 +257,6 @@ This poses a challenge for detection, which partly explains why these remote see
 with DeepLabv3 performing best overall, though SAM achieved top accuracy with fewer training images. Our method, validated on two documented seepage sites, offers promising perspectives for
 identifying and studying additional, as yet undiscovered remote seeps.
 
-% both deep learning models benefited from transferring pretrained model weights, 
-% with DeepLabv3 performing best overall, though SAM achieved top accuracy with 
-% fewer training images. The analysis was validated using two documented 
-% seeps in the Arctic, where our method could potentially identify additional, 
-% undiscovered seepage sites. Overall, our findings highlight the potential of 
-% transfer learning. This approach remains underutilized in remote sensing, 
-% yet it is promising for addressing data scarcity, with practical applications 
-% such as monitoring natural seepage in remote marine environments. 
 \section*{Acknowledgments}
 Julien Vadnais received financial support from the Doctoral Research Scholarship of the Fonds de recherche du Québec. 
 The authors would like to thank the EU Copernicus programme for allowing open access to the Sentinel-1 archives.

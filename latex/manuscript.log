@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.21)  4 APR 2025 21:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.21)  4 APR 2025 22:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -683,42 +683,42 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 57.
  (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 69.
- (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/psnfss/ot1phv.fd
-File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
-)
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 110.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 113.
 (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [1{c:/Users/juvad3723/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
 
 ]
-<figures/layout2_grids.png, id=114, 867.24pt x 867.24pt>
+<figures/layout2_grids.png, id=113, 867.24pt x 867.24pt>
 File: figures/layout2_grids.png Graphic file (type png)
 <use figures/layout2_grids.png>
-Package pdftex.def Info: figures/layout2_grids.png  used on input line 128.
+Package pdftex.def Info: figures/layout2_grids.png  used on input line 125.
 (pdftex.def)             Requested size: 238.49121pt x 238.48512pt.
 
 
 
 
 [2 <./figures/layout2_grids.png>]
-<figures/deeplab_dice_temp.png, id=164, 509.7444pt x 271.0125pt>
+<figures/deeplab_dice_temp.png, id=163, 509.7444pt x 271.0125pt>
 File: figures/deeplab_dice_temp.png Graphic file (type png)
 <use figures/deeplab_dice_temp.png>
-Package pdftex.def Info: figures/deeplab_dice_temp.png  used on input line 182.
+Package pdftex.def Info: figures/deeplab_dice_temp.png  used on input line 179.
 (pdftex.def)             Requested size: 229.81807pt x 122.18607pt.
-<figures/samlora_dice_temp.png, id=166, 509.7444pt x 271.0125pt>
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 179.
+ (c:/Users/juvad3723/texlive/2024/texmf-dist/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
+)
+<figures/samlora_dice_temp.png, id=165, 509.7444pt x 271.0125pt>
 File: figures/samlora_dice_temp.png Graphic file (type png)
 <use figures/samlora_dice_temp.png>
-Package pdftex.def Info: figures/samlora_dice_temp.png  used on input line 185.
+Package pdftex.def Info: figures/samlora_dice_temp.png  used on input line 182.
 (pdftex.def)             Requested size: 229.81807pt x 122.18607pt.
 
 
@@ -728,16 +728,16 @@ Package pdftex.def Info: figures/samlora_dice_temp.png  used on input line 185.
 <figures/preds4x3_v2_scale_lettering.png, id=208, 906.0249pt x 719.3274pt>
 File: figures/preds4x3_v2_scale_lettering.png Graphic file (type png)
 <use figures/preds4x3_v2_scale_lettering.png>
-Package pdftex.def Info: figures/preds4x3_v2_scale_lettering.png  used on input line 238.
+Package pdftex.def Info: figures/preds4x3_v2_scale_lettering.png  used on input line 235.
 (pdftex.def)             Requested size: 435.0657pt x 345.41591pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
+(./manuscript.bbl
 
-
-[4 <./figures/preds4x3_v2_scale_lettering.png>] (./manuscript.bbl
+[4 <./figures/preds4x3_v2_scale_lettering.png>]
 
 
 Underfull \hbox (badness 5460) in paragraph at lines 117--118
@@ -755,15 +755,15 @@ Package rerunfilecheck Info: File `manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: A667137AB4B7C864FEBB08FB83A3E83F;747.
  ) 
 Here is how much of TeX's memory you used:
- 23100 strings out of 473201
- 441590 string characters out of 5711963
- 854158 words of memory out of 5000000
- 45874 multiletter control sequences out of 15000+600000
- 607277 words of font info for 124 fonts, out of 8000000 for 9000
+ 23083 strings out of 473201
+ 441471 string characters out of 5711963
+ 833348 words of memory out of 5000000
+ 45858 multiletter control sequences out of 15000+600000
+ 605517 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,12n,105p,574b,811s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/Users/juvad3723/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on manuscript.pdf (5 pages, 7204226 bytes).
+Output written on manuscript.pdf (5 pages, 7200793 bytes).
 PDF statistics:
  336 PDF objects out of 1000 (max. 8388607)
  269 compressed objects within 3 object streams
