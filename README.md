@@ -1,6 +1,6 @@
 # Transfer learning between Sentinel-1 acquisition modes enhances the few-shot segmentation of natural oil slicks in the Arctic
 
-This repository contains the code, data, and documentation for the project **Transfer learning between Sentinel-1 acquisition modes enhances the few-shot segmentation of natural oil slicks in the Arctic**.
+This repository contains the code and data for the project **Transfer learning between Sentinel-1 acquisition modes enhances the few-shot segmentation of natural oil slicks in the Arctic**.
 
 The associated article has been submitted.
 
