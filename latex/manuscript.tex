@@ -47,8 +47,9 @@ Malin Johansson is with the Department of Physics and Technology, UiT The Arctic
 }
 
 % The paper headers
-\markboth{\LaTeX\ PDF, IEEE GEOSCIENCE AND REMOTE SENSING LETTERS,~Vol.~XX, No.~Y, <Month>~2025}%
-{Shell \MakeLowercase{\textit{et al.}}: A Sample Article Using IEEEtran.cls for IEEE Journals}
+% \markboth{\LaTeX\ PDF, IEEE GEOSCIENCE AND REMOTE SENSING LETTERS,~Vol.~XX, No.~Y, <Month>~2025}%
+\markboth{Vadnais \MakeLowercase{\textit{et al.}}: EarthArXiv preprint, submittedApril 2025}
+{Shell \MakeLowercase{\textit{Vadnais et al.}}: A Sample Article Using IEEEtran.cls for IEEE Journals}
 
 \IEEEpubid{\copyright This work is licensed under CC BY 4.0.}
 % Remember, if you use this you must call \IEEEpubidadjcol in the second column for its text to clear the IEEEpubid mark.
@@ -100,8 +101,6 @@ transferring valuable and generalizable features from one model to another, wher
 We pretrained two image segmentation models using oil slicks mapped in Sentinel-1 images over the North Sea. These models were then fine-tuned on two known seeps in the Arctic, for which we have only 
 limited observations. In the Arctic, Sentinel-1 scenes are mostly acquired in the extra wide (EW) mode at a 25-m pixel spacing with dual HH/HV polarization. However, elsewhere, oil mapping with Sentinel-1 more 
 commonly uses the interferometric wide (IW) mode at a 10-m pixel spacing with VV/VH polarization, as it is the standard mode in oceans outside of polar regions.
-%Over the Arctic, Sentinel-1 scenes are mostly acquired in the 25-m resolution extra-wide (EW) mode with a dual HH/HV polarization, whereas oil slick mapping with Sentinel-1 more often use the 
-%interferometric-wide (IW) mode, of 10-m pixel resolution with a dual VV/VH polarization. 
 Little work, if any, has addressed transfer learning between SAR acquisition modes, and we believe natural oil slicks make a prime example of a real-life application of deep-learning mapping with few labeled data. 
 
 \section{Data and Methods}
@@ -249,12 +248,13 @@ harsh mapping conditions.
 \section{Conclusion}
 Applications of transfer learning must be carefully evaluated. In many cases, its use can be inefficient, even detrimental, if the contexts are too different \cite{mensinkFactorsInfluenceTransfer2022}.
 In this study, we made use of labeled slicks from a different area and imaged in a different SAR acquisition mode. We show that transfer learning in the form of fine-tuning is effective for the few-shot SAR segmentation
-of natural oil slicks, improving model performance (average Dice increase of 0.03--0.13) despite accessing only a few examples in the target domain.
+of natural oil slicks, improving model performance (average Dice increase of 0.03--0.13) despite accessing only a few examples in the target domain. 
+Indeed, both deep learning models benefited from transferring pretrained model weights, 
+with DeepLabv3 performing best overall, though SAM achieved top accuracy with fewer training images.
 
-Transferability between IW and EW modes is especially important in the Arctic, where the absence of large spills--which oil segmentation models typically rely on for training-- 
-limits the availability of training data. In contrast, Arctic seeps emit slicks that are typically thin, with low oil concentrations and reduced backscatter damping.
-This poses a challenge for detection, which partly explains why these remote seeps are still under-investigated today. Our results show that both deep learning models benefited from transferring pretrained model weights, 
-with DeepLabv3 performing best overall, though SAM achieved top accuracy with fewer training images. Our method, validated on two documented seepage sites, offers promising perspectives for
+Transferability between IW and EW modes is especially important in the Arctic. In this region, the absence of large offshore spills--which oil segmentation models typically
+rely on for training--limits the availability of training data. In contrast, Arctic seeps emit slicks that are generally thinner, with low oil concentrations and reduced backscatter damping.
+This poses a challenge for detection, which partly explains why these remote seeps are still under-investigated today. Our method, validated on two documented seepage sites, offers promising perspectives for
 identifying and studying additional, as yet undiscovered remote seeps.
 
 \section*{Acknowledgments}
