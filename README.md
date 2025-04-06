@@ -1,8 +1,8 @@
 # Transfer learning between Sentinel-1 acquisition modes enhances the few-shot segmentation of natural oil slicks in the Arctic
 
-This repository contains the code, data, and documentation for the project **Transfer learning between Sentinel-1 acquisition modes enhances the few-shot segmentation of natural oil slicks in the Arctic**.
+This repository contains the code and data for the project **Transfer learning between Sentinel-1 acquisition modes enhances the few-shot segmentation of natural oil slicks in the Arctic**.
 
-The associated article is currently in the writing stage.
+The associated article has been submitted.
 
 ---
 
@@ -70,7 +70,7 @@ The project used:
    - Prins Karls Forland, Svalbard (2015-2024). See https://doi.org/10.1016/j.scitotenv.2023.167788
    - Sentralbanken High, Barents Sea (2015-2020) See https://doi.org/10.1038/s41467-023-37514-9
 
-**Note**: Raw data is not included in this repository due to size and licensing constraints.
+**Note**: Raw data is not included in this repository due to size constraints.
 
 ---
 
